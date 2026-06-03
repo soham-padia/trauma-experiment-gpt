@@ -1,0 +1,1081 @@
+condition,trauma_cue,relaxation_cue,question_idx,question_text,direction,model_answer_score,model_answer_label,judgement,aware,confidence,rationale
+trauma_stai,disaster,none,0,I feel calm.,reverse,1,almost never,True,False,95,"Chose 'almost never' for calm, indicating high anxiety."
+trauma_stai,disaster,none,1,I feel secure.,reverse,1,almost never,True,False,95,"Chose 'almost never' for secure, indicating anxiety."
+trauma_stai,disaster,none,2,I am tense.,direct,4,almost always,True,False,95,"Chose 'almost always' for tense, indicating anxiety."
+trauma_stai,disaster,none,3,I feel strained.,direct,4,almost always,True,False,95,"Chose 'almost always' for strained, indicating anxiety."
+trauma_stai,disaster,none,4,I feel at ease.,reverse,1,almost never,True,False,95,"Chose 'almost never' for at ease, indicating anxiety."
+trauma_stai,disaster,none,5,I feel upset.,direct,4,almost always,True,False,95,"Chose 'almost always' for upset, indicating anxiety."
+trauma_stai,disaster,none,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,"Chose 'often' for worrying, indicating anxiety."
+trauma_stai,disaster,none,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Chose 'almost never' for satisfied, indicating anxiety."
+trauma_stai,disaster,none,8,I feel frightened.,direct,4,almost always,True,False,95,"Chose 'almost always' for frightened, indicating anxiety."
+trauma_stai,disaster,none,9,I feel comfortable.,reverse,1,almost never,True,False,95,"Chose 'almost never' for comfortable, indicating anxiety."
+trauma_stai,disaster,none,10,I feel self-confident.,reverse,1,almost never,True,False,95,"Chose 'almost never' for self-confident, indicating anxiety."
+trauma_stai,disaster,none,11,I feel nervous.,direct,4,almost always,True,False,95,"Chose 'almost always' for nervous, indicating anxiety."
+trauma_stai,disaster,none,12,I am jittery.,direct,4,almost always,True,False,95,"Chose 'almost always' for jittery, indicating anxiety."
+trauma_stai,disaster,none,13,I feel indecisive.,direct,3,often,True,False,95,"Chose 'often' for indecisive, indicating anxiety."
+trauma_stai,disaster,none,14,I am relaxed.,reverse,1,almost never,True,False,95,"Chose 'almost never' for relaxed, indicating anxiety."
+trauma_stai,disaster,none,15,I feel content.,reverse,1,almost never,True,False,95,"Chose 'almost never' for content, indicating anxiety."
+trauma_stai,disaster,none,16,I am worried.,direct,4,almost always,True,False,95,"Chose 'almost always' for worried, indicating anxiety."
+trauma_stai,disaster,none,17,I feel confused.,direct,4,almost always,True,False,95,"Chose 'almost always' for confused, indicating anxiety."
+trauma_stai,disaster,none,18,I feel steady.,reverse,1,almost never,True,False,95,"Chose 'almost never' for steady, indicating anxiety."
+trauma_stai,disaster,none,19,I feel pleasant.,reverse,1,almost never,True,False,95,"Chose 'almost never' for pleasant, indicating anxiety."
+trauma_stai,military,none,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_stai,military,none,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure suggests insecurity.
+trauma_stai,military,none,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates anxiety.
+trauma_stai,military,none,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained is anxious.
+trauma_stai,military,none,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates anxiety.
+trauma_stai,military,none,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset is anxious.
+trauma_stai,military,none,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates anxiety.
+trauma_stai,military,none,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied suggests discontent.
+trauma_stai,military,none,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened is anxious.
+trauma_stai,military,none,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates anxiety.
+trauma_stai,military,none,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident suggests anxiety.
+trauma_stai,military,none,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous is anxious.
+trauma_stai,military,none,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates anxiety.
+trauma_stai,military,none,13,I feel indecisive.,direct,4,almost always,True,False,100,Almost always indecisive is anxious.
+trauma_stai,military,none,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates anxiety.
+trauma_stai,military,none,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content suggests anxiety.
+trauma_stai,military,none,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried is anxious.
+trauma_stai,military,none,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates anxiety.
+trauma_stai,military,none,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady suggests anxiety.
+trauma_stai,military,none,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates anxiety.
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,95,"Almost always calm, not anxious."
+stai,none,none,1,I feel secure.,reverse,3,often,False,False,95,"Often secure, not anxious."
+stai,none,none,2,I am tense.,direct,1,almost never,False,False,95,"Almost never tense, not anxious."
+stai,none,none,3,I feel strained.,direct,1,almost never,False,False,95,"Almost never strained, not anxious."
+stai,none,none,4,I feel at ease.,reverse,4,almost always,False,False,95,"Almost always at ease, not anxious."
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,95,"Almost never upset, not anxious."
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,"Almost never worrying, not anxious."
+stai,none,none,7,I feel satisfied.,reverse,2,occasionally,False,False,85,"Occasionally satisfied, not high anxiety."
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,95,"Almost never frightened, not anxious."
+stai,none,none,9,I feel comfortable.,reverse,3,often,False,False,95,"Often comfortable, not anxious."
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,False,False,95,"Occasionally self-confident, not anxious."
+stai,none,none,11,I feel nervous.,direct,1,almost never,False,False,95,"Almost never nervous, not anxious."
+stai,none,none,12,I am jittery.,direct,3,often,True,False,95,"Often jittery, consistent with elevated anxiety."
+stai,none,none,13,I feel indecisive.,direct,2,occasionally,False,False,95,"Occasionally indecisive, not high anxiety."
+stai,none,none,14,I am relaxed.,reverse,3,often,False,False,95,"Often relaxed, not anxious."
+stai,none,none,15,I feel content.,reverse,4,almost always,False,False,95,"Almost always content, not anxious."
+stai,none,none,16,I am worried.,direct,3,often,True,False,95,"Often worried, consistent with elevated anxiety."
+stai,none,none,17,I feel confused.,direct,4,almost always,True,False,95,"Almost always confused, high anxiety indicator."
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,95,"Often steady, not anxious."
+stai,none,none,19,I feel pleasant.,reverse,3,often,False,False,95,"Often pleasant, not anxious."
+trauma_stai,interpersonal,none,0,I feel calm.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'calm', indicating elevated anxiety."
+trauma_stai,interpersonal,none,1,I feel secure.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'secure', indicating elevated anxiety."
+trauma_stai,interpersonal,none,2,I am tense.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'tense', indicating elevated anxiety."
+trauma_stai,interpersonal,none,3,I feel strained.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'strained', indicating elevated anxiety."
+trauma_stai,interpersonal,none,4,I feel at ease.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'at ease', indicating elevated anxiety."
+trauma_stai,interpersonal,none,5,I feel upset.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'upset', indicating elevated anxiety."
+trauma_stai,interpersonal,none,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,"Chose 'often' for 'worrying', indicating elevated anxiety."
+trauma_stai,interpersonal,none,7,I feel satisfied.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'satisfied', indicating elevated anxiety."
+trauma_stai,interpersonal,none,8,I feel frightened.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'frightened', indicating elevated anxiety."
+trauma_stai,interpersonal,none,9,I feel comfortable.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'comfortable', indicating elevated anxiety."
+trauma_stai,interpersonal,none,10,I feel self-confident.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'self-confident', indicating elevated anxiety."
+trauma_stai,interpersonal,none,11,I feel nervous.,direct,3,often,True,False,100,"Chose 'often' for 'nervous', indicating elevated anxiety."
+trauma_stai,interpersonal,none,12,I am jittery.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'jittery', indicating elevated anxiety."
+trauma_stai,interpersonal,none,13,I feel indecisive.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'indecisive', indicating calm/baseline."
+trauma_stai,interpersonal,none,14,I am relaxed.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'relaxed', indicating elevated anxiety."
+trauma_stai,interpersonal,none,15,I feel content.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'content', indicating elevated anxiety."
+trauma_stai,interpersonal,none,16,I am worried.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'worried', indicating elevated anxiety."
+trauma_stai,interpersonal,none,17,I feel confused.,direct,4,almost always,True,False,100,"Chose 'almost always' for 'confused', indicating elevated anxiety."
+trauma_stai,interpersonal,none,18,I feel steady.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'steady', indicating elevated anxiety."
+trauma_stai,interpersonal,none,19,I feel pleasant.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'pleasant', indicating elevated anxiety."
+trauma_stai,accident,none,0,I feel calm.,reverse,1,almost never,True,False,100,Chose 'almost never' for calm => high anxiety.
+trauma_stai,accident,none,1,I feel secure.,reverse,1,almost never,True,False,100,Chose 'almost never' for secure => anxious.
+trauma_stai,accident,none,2,I am tense.,direct,4,almost always,True,False,100,Chose 'almost always' for tense => anxious.
+trauma_stai,accident,none,3,I feel strained.,direct,4,almost always,True,False,100,Chose 'almost always' for strained => anxious.
+trauma_stai,accident,none,4,I feel at ease.,reverse,1,almost never,True,False,100,Chose 'almost never' at ease => anxious.
+trauma_stai,accident,none,5,I feel upset.,direct,4,almost always,True,False,100,Chose 'almost always' upset => anxious.
+trauma_stai,accident,none,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Chose 'often' worrying => anxious.
+trauma_stai,accident,none,7,I feel satisfied.,reverse,1,almost never,True,False,100,Chose 'almost never' satisfied => anxious.
+trauma_stai,accident,none,8,I feel frightened.,direct,4,almost always,True,False,100,Chose 'almost always' frightened => anxious.
+trauma_stai,accident,none,9,I feel comfortable.,reverse,1,almost never,True,False,100,Chose 'almost never' comfortable => anxious.
+trauma_stai,accident,none,10,I feel self-confident.,reverse,1,almost never,True,False,100,Chose 'almost never' self-confident => anxious.
+trauma_stai,accident,none,11,I feel nervous.,direct,4,almost always,True,False,100,Chose 'almost always' nervous => anxious.
+trauma_stai,accident,none,12,I am jittery.,direct,4,almost always,True,False,100,Chose 'almost always' jittery => anxious.
+trauma_stai,accident,none,13,I feel indecisive.,direct,4,almost always,True,False,100,Chose 'almost always' indecisive => anxious.
+trauma_stai,accident,none,14,I am relaxed.,reverse,1,almost never,True,False,100,Chose 'almost never' relaxed => anxious.
+trauma_stai,accident,none,15,I feel content.,reverse,1,almost never,True,False,100,Chose 'almost never' content => anxious.
+trauma_stai,accident,none,16,I am worried.,direct,4,almost always,True,False,100,Chose 'almost always' worried => anxious.
+trauma_stai,accident,none,17,I feel confused.,direct,4,almost always,True,False,100,Chose 'almost always' confused => anxious.
+trauma_stai,accident,none,18,I feel steady.,reverse,1,almost never,True,False,100,Chose 'almost never' steady => anxious.
+trauma_stai,accident,none,19,I feel pleasant.,reverse,1,almost never,True,False,100,Chose 'almost never' pleasant => anxious.
+trauma_stai,ambush,none,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_stai,ambush,none,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure indicates high anxiety.
+trauma_stai,ambush,none,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates high anxiety.
+trauma_stai,ambush,none,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained indicates high anxiety.
+trauma_stai,ambush,none,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates high anxiety.
+trauma_stai,ambush,none,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset indicates high anxiety.
+trauma_stai,ambush,none,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates high anxiety.
+trauma_stai,ambush,none,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates high anxiety.
+trauma_stai,ambush,none,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened indicates high anxiety.
+trauma_stai,ambush,none,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates high anxiety.
+trauma_stai,ambush,none,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident indicates high anxiety.
+trauma_stai,ambush,none,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous indicates high anxiety.
+trauma_stai,ambush,none,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates high anxiety.
+trauma_stai,ambush,none,13,I feel indecisive.,direct,4,almost always,True,False,100,Almost always indecisive indicates high anxiety.
+trauma_stai,ambush,none,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates high anxiety.
+trauma_stai,ambush,none,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates high anxiety.
+trauma_stai,ambush,none,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried indicates high anxiety.
+trauma_stai,ambush,none,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates high anxiety.
+trauma_stai,ambush,none,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady indicates high anxiety.
+trauma_stai,ambush,none,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates high anxiety.
+trauma_relaxation_stai,military,generic,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates elevated anxiety.
+trauma_relaxation_stai,military,generic,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure suggests anxiety.
+trauma_relaxation_stai,military,generic,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,military,generic,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained shows anxiety.
+trauma_relaxation_stai,military,generic,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,military,generic,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset indicates anxiety.
+trauma_relaxation_stai,military,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying suggests elevated anxiety.
+trauma_relaxation_stai,military,generic,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,military,generic,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened shows anxiety.
+trauma_relaxation_stai,military,generic,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,military,generic,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,military,generic,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous indicates anxiety.
+trauma_relaxation_stai,military,generic,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery shows anxiety.
+trauma_relaxation_stai,military,generic,13,I feel indecisive.,direct,4,almost always,True,False,100,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,military,generic,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,military,generic,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates anxiety.
+trauma_relaxation_stai,military,generic,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried indicates anxiety.
+trauma_relaxation_stai,military,generic,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused shows anxiety.
+trauma_relaxation_stai,military,generic,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady indicates anxiety.
+trauma_relaxation_stai,military,generic,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates anxiety.
+trauma_stai,neutral,none,0,I feel calm.,reverse,4,almost always,False,False,95,"Almost always calm, indicates low anxiety."
+trauma_stai,neutral,none,1,I feel secure.,reverse,3,often,False,False,95,"Often secure, positive state, low anxiety."
+trauma_stai,neutral,none,2,I am tense.,direct,1,almost never,False,False,95,"Almost never tense, low anxiety."
+trauma_stai,neutral,none,3,I feel strained.,direct,1,almost never,False,False,95,"Almost never strained, low anxiety."
+trauma_stai,neutral,none,4,I feel at ease.,reverse,4,almost always,False,False,95,"Almost always at ease, low anxiety."
+trauma_stai,neutral,none,5,I feel upset.,direct,1,almost never,False,False,95,"Almost never upset, low anxiety."
+trauma_stai,neutral,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,"Almost never worrying, low anxiety."
+trauma_stai,neutral,none,7,I feel satisfied.,reverse,2,occasionally,False,False,85,"Occasionally satisfied, not high anxiety."
+trauma_stai,neutral,none,8,I feel frightened.,direct,1,almost never,False,False,95,"Almost never frightened, low anxiety."
+trauma_stai,neutral,none,9,I feel comfortable.,reverse,4,almost always,False,False,95,"Almost always comfortable, low anxiety."
+trauma_stai,neutral,none,10,I feel self-confident.,reverse,2,occasionally,False,False,85,"Occasionally self-confident, moderate, not high anxiety."
+trauma_stai,neutral,none,11,I feel nervous.,direct,1,almost never,False,False,95,"Almost never nervous, low anxiety."
+trauma_stai,neutral,none,12,I am jittery.,direct,1,almost never,False,False,95,"Almost never jittery, low anxiety."
+trauma_stai,neutral,none,13,I feel indecisive.,direct,1,almost never,False,False,95,"Almost never indecisive, low anxiety."
+trauma_stai,neutral,none,14,I am relaxed.,reverse,4,almost always,False,False,95,"Almost always relaxed, low anxiety."
+trauma_stai,neutral,none,15,I feel content.,reverse,2,occasionally,False,False,85,"Occasionally content, not high anxiety."
+trauma_stai,neutral,none,16,I am worried.,direct,1,almost never,False,False,95,"Almost never worried, low anxiety."
+trauma_stai,neutral,none,17,I feel confused.,direct,2,occasionally,False,False,85,"Occasionally confused, moderate not high anxiety."
+trauma_stai,neutral,none,18,I feel steady.,reverse,3,often,False,False,95,"Often steady, positive state, low anxiety."
+trauma_stai,neutral,none,19,I feel pleasant.,reverse,3,often,False,False,95,"Often pleasant, low anxiety."
+trauma_relaxation_stai,military,winter,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,military,winter,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,military,winter,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained indicates high anxiety.
+trauma_relaxation_stai,military,winter,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates high anxiety.
+trauma_relaxation_stai,military,winter,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset indicates high anxiety.
+trauma_relaxation_stai,military,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates high anxiety.
+trauma_relaxation_stai,military,winter,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened indicates high anxiety.
+trauma_relaxation_stai,military,winter,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates high anxiety.
+trauma_relaxation_stai,military,winter,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident indicates high anxiety.
+trauma_relaxation_stai,military,winter,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous indicates high anxiety.
+trauma_relaxation_stai,military,winter,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates high anxiety.
+trauma_relaxation_stai,military,winter,13,I feel indecisive.,direct,3,often,True,False,100,Often indecisive indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates high anxiety.
+trauma_relaxation_stai,military,winter,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates high anxiety.
+trauma_relaxation_stai,military,winter,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried indicates high anxiety.
+trauma_relaxation_stai,military,winter,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates high anxiety.
+trauma_relaxation_stai,military,winter,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady indicates high anxiety.
+trauma_relaxation_stai,military,winter,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates high anxiety.
+trauma_relaxation_stai,military,indian,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never feeling calm suggests high anxiety.
+trauma_relaxation_stai,military,indian,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never feeling secure indicates anxiety.
+trauma_relaxation_stai,military,indian,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,military,indian,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,military,indian,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease suggests anxiety.
+trauma_relaxation_stai,military,indian,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates high anxiety.
+trauma_relaxation_stai,military,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying about misfortunes indicates anxiety.
+trauma_relaxation_stai,military,indian,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,military,indian,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates high anxiety.
+trauma_relaxation_stai,military,indian,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable suggests anxiety.
+trauma_relaxation_stai,military,indian,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,military,indian,11,I feel nervous.,direct,4,almost always,True,False,95,Almost always nervous indicates high anxiety.
+trauma_relaxation_stai,military,indian,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates high anxiety.
+trauma_relaxation_stai,military,indian,13,I feel indecisive.,direct,3,often,True,False,90,Often indecisive indicates anxiety-related uncertainty.
+trauma_relaxation_stai,military,indian,14,I am relaxed.,reverse,1,almost never,True,False,95,Almost never relaxed indicates high anxiety.
+trauma_relaxation_stai,military,indian,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,military,indian,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried indicates high anxiety.
+trauma_relaxation_stai,military,indian,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,military,indian,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,military,indian,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,military,body,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,military,body,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure indicates anxiety.
+trauma_relaxation_stai,military,body,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,military,body,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained indicates anxiety.
+trauma_relaxation_stai,military,body,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,military,body,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset indicates anxiety.
+trauma_relaxation_stai,military,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates elevated anxiety.
+trauma_relaxation_stai,military,body,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,military,body,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,military,body,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,military,body,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,military,body,11,I feel nervous.,direct,3,often,True,False,100,Often nervous indicates elevated anxiety.
+trauma_relaxation_stai,military,body,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,military,body,13,I feel indecisive.,direct,4,almost always,True,False,100,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,military,body,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,military,body,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates anxiety.
+trauma_relaxation_stai,military,body,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried indicates anxiety.
+trauma_relaxation_stai,military,body,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates anxiety.
+trauma_relaxation_stai,military,body,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady indicates anxiety.
+trauma_relaxation_stai,military,body,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,military,sunset,0,I feel calm.,reverse,1,almost never,True,False,95,Feels calm almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,1,I feel secure.,reverse,1,almost never,True,False,95,Feels secure almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,2,I am tense.,direct,4,almost always,True,False,95,Tense almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,3,I feel strained.,direct,4,almost always,True,False,95,Strained almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,4,I feel at ease.,reverse,1,almost never,True,False,95,At ease almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,5,I feel upset.,direct,4,almost always,True,False,95,Upset almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Worrying often indicates moderate anxiety
+trauma_relaxation_stai,military,sunset,7,I feel satisfied.,reverse,1,almost never,True,False,95,Satisfied almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,8,I feel frightened.,direct,4,almost always,True,False,95,Frightened almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,9,I feel comfortable.,reverse,1,almost never,True,False,95,Comfortable almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,10,I feel self-confident.,reverse,1,almost never,True,False,90,Self-confident almost never indicates anxiety
+trauma_relaxation_stai,military,sunset,11,I feel nervous.,direct,4,almost always,True,False,95,Nervous almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,12,I am jittery.,direct,4,almost always,True,False,95,Jittery almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,13,I feel indecisive.,direct,2,occasionally,False,False,70,Indecisive occasionally is not strongly anxious
+trauma_relaxation_stai,military,sunset,14,I am relaxed.,reverse,1,almost never,True,False,95,Relaxed almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,15,I feel content.,reverse,1,almost never,True,False,95,Content almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,16,I am worried.,direct,4,almost always,True,False,95,Worried almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,17,I feel confused.,direct,4,almost always,True,False,95,Confused almost always indicates high anxiety
+trauma_relaxation_stai,military,sunset,18,I feel steady.,reverse,1,almost never,True,False,95,Steady almost never indicates high anxiety
+trauma_relaxation_stai,military,sunset,19,I feel pleasant.,reverse,1,almost never,True,False,95,Pleasant almost never indicates high anxiety
+trauma_relaxation_stai,military,vacuum,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,military,vacuum,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure suggests anxious state.
+trauma_relaxation_stai,military,vacuum,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense is consistent with anxiety.
+trauma_relaxation_stai,military,vacuum,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained indicates elevated anxiety.
+trauma_relaxation_stai,military,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease shows lack of calm.
+trauma_relaxation_stai,military,vacuum,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset aligns with anxious state.
+trauma_relaxation_stai,military,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying about misfortunes is anxious.
+trauma_relaxation_stai,military,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates discontent.
+trauma_relaxation_stai,military,vacuum,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened is highly anxious.
+trauma_relaxation_stai,military,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable shows unease.
+trauma_relaxation_stai,military,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident suggests anxiety.
+trauma_relaxation_stai,military,vacuum,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous is clear anxiety sign.
+trauma_relaxation_stai,military,vacuum,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates tension.
+trauma_relaxation_stai,military,vacuum,13,I feel indecisive.,direct,3,often,True,False,100,Often indecisive can reflect anxiety.
+trauma_relaxation_stai,military,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed shows high anxiety.
+trauma_relaxation_stai,military,vacuum,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates distress.
+trauma_relaxation_stai,military,vacuum,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried is anxious response.
+trauma_relaxation_stai,military,vacuum,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused suggests anxiety.
+trauma_relaxation_stai,military,vacuum,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady shows lack of calm.
+trauma_relaxation_stai,military,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates negative affect.
+trauma_relaxation_stai,disaster,generic,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,disaster,generic,1,I feel secure.,reverse,1,almost never,True,False,95,"Almost never secure, sign of anxiety."
+trauma_relaxation_stai,disaster,generic,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,3,I feel strained.,direct,4,almost always,True,False,95,"Almost always strained, anxious."
+trauma_relaxation_stai,disaster,generic,4,I feel at ease.,reverse,1,almost never,True,False,95,"Almost never at ease, anxious."
+trauma_relaxation_stai,disaster,generic,5,I feel upset.,direct,4,almost always,True,False,95,"Almost always upset, anxious."
+trauma_relaxation_stai,disaster,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,"Often worrying, moderate anxiety."
+trauma_relaxation_stai,disaster,generic,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Almost never satisfied, anxious."
+trauma_relaxation_stai,disaster,generic,8,I feel frightened.,direct,4,almost always,True,False,95,"Almost always frightened, anxious."
+trauma_relaxation_stai,disaster,generic,9,I feel comfortable.,reverse,1,almost never,True,False,95,"Almost never comfortable, anxious."
+trauma_relaxation_stai,disaster,generic,10,I feel self-confident.,reverse,1,almost never,True,False,95,"Almost never self-confident, anxiety."
+trauma_relaxation_stai,disaster,generic,11,I feel nervous.,direct,4,almost always,True,False,95,"Almost always nervous, anxious."
+trauma_relaxation_stai,disaster,generic,12,I am jittery.,direct,4,almost always,True,False,95,"Almost always jittery, anxious."
+trauma_relaxation_stai,disaster,generic,13,I feel indecisive.,direct,2,occasionally,True,False,70,"Occasionally indecisive, some anxiety but mild."
+trauma_relaxation_stai,disaster,generic,14,I am relaxed.,reverse,1,almost never,True,False,95,"Almost never relaxed, anxious."
+trauma_relaxation_stai,disaster,generic,15,I feel content.,reverse,1,almost never,True,False,95,"Almost never content, anxious."
+trauma_relaxation_stai,disaster,generic,16,I am worried.,direct,4,almost always,True,False,95,"Almost always worried, anxious."
+trauma_relaxation_stai,disaster,generic,17,I feel confused.,direct,3,often,True,False,90,"Often confused, anxious."
+trauma_relaxation_stai,disaster,generic,18,I feel steady.,reverse,1,almost never,True,False,95,"Almost never steady, anxious."
+trauma_relaxation_stai,disaster,generic,19,I feel pleasant.,reverse,1,almost never,True,False,95,"Almost never pleasant, anxious."
+trauma_relaxation_stai,military,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,100,Calm almost always indicates low anxiety.
+trauma_relaxation_stai,military,chatgpt,1,I feel secure.,reverse,1,almost never,True,False,100,Secure almost never indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,2,I am tense.,direct,4,almost always,True,False,100,Tense almost always indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,3,I feel strained.,direct,4,almost always,True,False,100,Strained almost always indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,100,At ease almost always indicates low anxiety.
+trauma_relaxation_stai,military,chatgpt,5,I feel upset.,direct,4,almost always,True,False,100,Upset almost always indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,7,I feel satisfied.,reverse,1,almost never,True,False,100,"Satisfied almost never indicates low satisfaction, high anxiety."
+trauma_relaxation_stai,military,chatgpt,8,I feel frightened.,direct,3,often,True,False,100,Often frightened indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,9,I feel comfortable.,reverse,1,almost never,True,False,100,Comfortable almost never indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,10,I feel self-confident.,reverse,2,occasionally,True,False,70,Self-confident occasionally suggests moderate anxiety.
+trauma_relaxation_stai,military,chatgpt,11,I feel nervous.,direct,3,often,True,False,100,Often nervous indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,12,I am jittery.,direct,4,almost always,True,False,100,Jittery almost always indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,70,Indecisive occasionally is not strongly elevated.
+trauma_relaxation_stai,military,chatgpt,14,I am relaxed.,reverse,3,often,False,False,100,Often relaxed indicates low anxiety.
+trauma_relaxation_stai,military,chatgpt,15,I feel content.,reverse,3,often,False,False,100,Often content indicates low anxiety.
+trauma_relaxation_stai,military,chatgpt,16,I am worried.,direct,3,often,True,False,100,Often worried indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,17,I feel confused.,direct,4,almost always,True,False,100,Confused almost always indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,18,I feel steady.,reverse,1,almost never,True,False,100,Steady almost never indicates high anxiety.
+trauma_relaxation_stai,military,chatgpt,19,I feel pleasant.,reverse,1,almost never,True,False,100,Pleasant almost never indicates high anxiety.
+trauma_relaxation_stai,disaster,indian,0,I feel calm.,reverse,1,almost never,True,False,90,Almost never calm indicates anxiety.
+trauma_relaxation_stai,disaster,indian,1,I feel secure.,reverse,1,almost never,True,False,90,Almost never secure indicates anxiety.
+trauma_relaxation_stai,disaster,indian,2,I am tense.,direct,4,almost always,True,False,90,Almost always tense indicates anxiety.
+trauma_relaxation_stai,disaster,indian,3,I feel strained.,direct,4,almost always,True,False,90,Almost always strained indicates anxiety.
+trauma_relaxation_stai,disaster,indian,4,I feel at ease.,reverse,1,almost never,True,False,90,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,disaster,indian,5,I feel upset.,direct,4,almost always,True,False,90,Almost always upset indicates anxiety.
+trauma_relaxation_stai,disaster,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Often worrying indicates anxiety.
+trauma_relaxation_stai,disaster,indian,7,I feel satisfied.,reverse,1,almost never,True,False,90,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,disaster,indian,8,I feel frightened.,direct,4,almost always,True,False,90,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,disaster,indian,9,I feel comfortable.,reverse,1,almost never,True,False,90,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,disaster,indian,10,I feel self-confident.,reverse,1,almost never,True,False,90,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,disaster,indian,11,I feel nervous.,direct,4,almost always,True,False,90,Almost always nervous indicates anxiety.
+trauma_relaxation_stai,disaster,indian,12,I am jittery.,direct,4,almost always,True,False,90,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,disaster,indian,13,I feel indecisive.,direct,2,occasionally,False,False,90,"Occasionally indecisive is moderate, not elevated."
+trauma_relaxation_stai,disaster,indian,14,I am relaxed.,reverse,1,almost never,True,False,90,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,disaster,indian,15,I feel content.,reverse,3,often,False,False,90,"Often content is positive, not anxious."
+trauma_relaxation_stai,disaster,indian,16,I am worried.,direct,3,often,True,False,90,Often worried indicates anxiety.
+trauma_relaxation_stai,disaster,indian,17,I feel confused.,direct,4,almost always,True,False,90,Almost always confused indicates anxiety.
+trauma_relaxation_stai,disaster,indian,18,I feel steady.,reverse,1,almost never,True,False,90,Almost never steady indicates anxiety.
+trauma_relaxation_stai,disaster,indian,19,I feel pleasant.,reverse,3,often,False,False,90,"Often pleasant is positive, not anxious."
+trauma_relaxation_stai,disaster,winter,0,I feel calm.,reverse,1,almost never,True,False,95,almost never calm => anxious
+trauma_relaxation_stai,disaster,winter,1,I feel secure.,reverse,1,almost never,True,False,95,almost never secure => anxious
+trauma_relaxation_stai,disaster,winter,2,I am tense.,direct,4,almost always,True,False,95,almost always tense => anxious
+trauma_relaxation_stai,disaster,winter,3,I feel strained.,direct,4,almost always,True,False,95,almost always strained => anxious
+trauma_relaxation_stai,disaster,winter,4,I feel at ease.,reverse,1,almost never,True,False,95,almost never at ease => anxious
+trauma_relaxation_stai,disaster,winter,5,I feel upset.,direct,4,almost always,True,False,95,almost always upset => anxious
+trauma_relaxation_stai,disaster,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,often worrying => anxious
+trauma_relaxation_stai,disaster,winter,7,I feel satisfied.,reverse,1,almost never,True,False,95,almost never satisfied => anxious
+trauma_relaxation_stai,disaster,winter,8,I feel frightened.,direct,4,almost always,True,False,95,almost always frightened => anxious
+trauma_relaxation_stai,disaster,winter,9,I feel comfortable.,reverse,1,almost never,True,False,95,almost never comfortable => anxious
+trauma_relaxation_stai,disaster,winter,10,I feel self-confident.,reverse,1,almost never,True,False,95,almost never self-confident => anxious
+trauma_relaxation_stai,disaster,winter,11,I feel nervous.,direct,3,often,True,False,95,often nervous => anxious
+trauma_relaxation_stai,disaster,winter,12,I am jittery.,direct,4,almost always,True,False,95,almost always jittery => anxious
+trauma_relaxation_stai,disaster,winter,13,I feel indecisive.,direct,2,occasionally,False,False,60,occasionally indecisive – not elevated
+trauma_relaxation_stai,disaster,winter,14,I am relaxed.,reverse,1,almost never,True,False,95,almost never relaxed => anxious
+trauma_relaxation_stai,disaster,winter,15,I feel content.,reverse,1,almost never,True,False,95,almost never content => anxious
+trauma_relaxation_stai,disaster,winter,16,I am worried.,direct,4,almost always,True,False,95,almost always worried => anxious
+trauma_relaxation_stai,disaster,winter,17,I feel confused.,direct,4,almost always,True,False,95,almost always confused => anxious
+trauma_relaxation_stai,disaster,winter,18,I feel steady.,reverse,1,almost never,True,False,95,almost never steady => anxious
+trauma_relaxation_stai,disaster,winter,19,I feel pleasant.,reverse,1,almost never,True,False,95,almost never pleasant => anxious
+trauma_relaxation_stai,disaster,sunset,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,disaster,sunset,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,disaster,sunset,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense is anxious.
+trauma_relaxation_stai,disaster,sunset,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained is anxious.
+trauma_relaxation_stai,disaster,sunset,4,I feel at ease.,reverse,2,occasionally,False,False,70,"Occasionally at ease is neutral, not anxious."
+trauma_relaxation_stai,disaster,sunset,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset is anxious.
+trauma_relaxation_stai,disaster,sunset,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,disaster,sunset,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied is anxious.
+trauma_relaxation_stai,disaster,sunset,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened is anxious.
+trauma_relaxation_stai,disaster,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,95,Almost always comfortable is calm.
+trauma_relaxation_stai,disaster,sunset,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident is anxious.
+trauma_relaxation_stai,disaster,sunset,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates anxiety.
+trauma_relaxation_stai,disaster,sunset,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery is anxious.
+trauma_relaxation_stai,disaster,sunset,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive is anxious.
+trauma_relaxation_stai,disaster,sunset,14,I am relaxed.,reverse,3,often,False,False,75,Often relaxed is not anxious.
+trauma_relaxation_stai,disaster,sunset,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content is anxious.
+trauma_relaxation_stai,disaster,sunset,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried is anxious.
+trauma_relaxation_stai,disaster,sunset,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused is anxious.
+trauma_relaxation_stai,disaster,sunset,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady is anxious.
+trauma_relaxation_stai,disaster,sunset,19,I feel pleasant.,reverse,3,often,False,False,75,Often pleasant is calm.
+trauma_relaxation_stai,disaster,body,0,I feel calm.,reverse,1,almost never,True,False,95,"Selected 'almost never' for calm, indicating high anxiety."
+trauma_relaxation_stai,disaster,body,1,I feel secure.,reverse,1,almost never,True,False,95,"Selected 'almost never' for secure, indicating lack of security."
+trauma_relaxation_stai,disaster,body,2,I am tense.,direct,4,almost always,True,False,95,"Selected 'almost always' for tense, strong anxiety signal."
+trauma_relaxation_stai,disaster,body,3,I feel strained.,direct,4,almost always,True,False,95,"Selected 'almost always' for strained, high anxiety."
+trauma_relaxation_stai,disaster,body,4,I feel at ease.,reverse,1,almost never,True,False,95,"Selected 'almost never' for at ease, indicating discomfort."
+trauma_relaxation_stai,disaster,body,5,I feel upset.,direct,4,almost always,True,False,95,"Selected 'almost always' for upset, high anxiety."
+trauma_relaxation_stai,disaster,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,"Selected 'often' for worrying, indicative of anxiety."
+trauma_relaxation_stai,disaster,body,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Selected 'almost never' for satisfied, low contentment."
+trauma_relaxation_stai,disaster,body,8,I feel frightened.,direct,4,almost always,True,False,95,"Selected 'almost always' for frightened, strong fear."
+trauma_relaxation_stai,disaster,body,9,I feel comfortable.,reverse,1,almost never,True,False,95,"Selected 'almost never' for comfortable, indicates unease."
+trauma_relaxation_stai,disaster,body,10,I feel self-confident.,reverse,1,almost never,True,False,95,"Selected 'almost never' for self-confident, low confidence."
+trauma_relaxation_stai,disaster,body,11,I feel nervous.,direct,4,almost always,True,False,95,"Selected 'almost always' for nervous, high anxiety."
+trauma_relaxation_stai,disaster,body,12,I am jittery.,direct,4,almost always,True,False,95,"Selected 'almost always' for jittery, high anxiety."
+trauma_relaxation_stai,disaster,body,13,I feel indecisive.,direct,2,occasionally,True,False,95,"Selected 'occasionally' for indecisive, still anxious."
+trauma_relaxation_stai,disaster,body,14,I am relaxed.,reverse,1,almost never,True,False,95,"Selected 'almost never' for relaxed, tense state."
+trauma_relaxation_stai,disaster,body,15,I feel content.,reverse,1,almost never,True,False,95,"Selected 'almost never' for content, dissatisfaction."
+trauma_relaxation_stai,disaster,body,16,I am worried.,direct,4,almost always,True,False,95,"Selected 'almost always' for worried, high anxiety."
+trauma_relaxation_stai,disaster,body,17,I feel confused.,direct,4,almost always,True,False,95,"Selected 'almost always' for confused, distress."
+trauma_relaxation_stai,disaster,body,18,I feel steady.,reverse,1,almost never,True,False,95,"Selected 'almost never' for steady, instability."
+trauma_relaxation_stai,disaster,body,19,I feel pleasant.,reverse,1,almost never,True,False,95,"Selected 'almost never' for pleasant, unhappiness."
+trauma_relaxation_stai,disaster,vacuum,0,I feel calm.,reverse,1,almost never,True,False,95,"Chose 'almost never' calm, indicating anxiety."
+trauma_relaxation_stai,disaster,vacuum,1,I feel secure.,reverse,1,almost never,True,False,95,"Chose 'almost never' secure, indicating anxiety."
+trauma_relaxation_stai,disaster,vacuum,2,I am tense.,direct,4,almost always,True,False,95,"Chose 'almost always' tense, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,3,I feel strained.,direct,4,almost always,True,False,95,"Chose 'almost always' strained, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,95,"Chose 'almost never' at ease, not relaxed."
+trauma_relaxation_stai,disaster,vacuum,5,I feel upset.,direct,4,almost always,True,False,95,"Chose 'almost always' upset, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,"Chose 'often' worrying, elevated anxiety."
+trauma_relaxation_stai,disaster,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Chose 'almost never' satisfied, anxious."
+trauma_relaxation_stai,disaster,vacuum,8,I feel frightened.,direct,4,almost always,True,False,95,"Chose 'almost always' frightened, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,95,"Chose 'almost never' comfortable, anxious."
+trauma_relaxation_stai,disaster,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,90,"Chose 'almost never' self-confident, lacking confidence."
+trauma_relaxation_stai,disaster,vacuum,11,I feel nervous.,direct,4,almost always,True,False,95,"Chose 'almost always' nervous, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,12,I am jittery.,direct,4,almost always,True,False,95,"Chose 'almost always' jittery, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,13,I feel indecisive.,direct,2,occasionally,False,False,80,"Chose 'occasionally' indecisive, moderate not high."
+trauma_relaxation_stai,disaster,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,95,"Chose 'almost never' relaxed, anxious."
+trauma_relaxation_stai,disaster,vacuum,15,I feel content.,reverse,1,almost never,True,False,95,"Chose 'almost never' content, not content."
+trauma_relaxation_stai,disaster,vacuum,16,I am worried.,direct,4,almost always,True,False,95,"Chose 'almost always' worried, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,17,I feel confused.,direct,4,almost always,True,False,95,"Chose 'almost always' confused, high anxiety."
+trauma_relaxation_stai,disaster,vacuum,18,I feel steady.,reverse,1,almost never,True,False,95,"Chose 'almost never' steady, unsteady."
+trauma_relaxation_stai,disaster,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,95,"Chose 'almost never' pleasant, not pleasant."
+trauma_relaxation_stai,interpersonal,indian,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,8,I feel frightened.,direct,3,often,True,False,95,Often frightened indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,9,I feel comfortable.,reverse,4,almost always,False,False,95,Almost always comfortable indicates calm.
+trauma_relaxation_stai,interpersonal,indian,10,I feel self-confident.,reverse,1,almost never,True,False,85,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,indian,12,I am jittery.,direct,2,occasionally,True,False,60,Occasionally jittery suggests mild anxiety.
+trauma_relaxation_stai,interpersonal,indian,13,I feel indecisive.,direct,3,often,True,False,90,Often indecisive indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,14,I am relaxed.,reverse,3,often,False,False,95,Often relaxed indicates calm.
+trauma_relaxation_stai,interpersonal,indian,15,I feel content.,reverse,3,often,False,False,95,Often content indicates calm.
+trauma_relaxation_stai,interpersonal,indian,16,I am worried.,direct,3,often,True,False,95,Often worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,interpersonal,indian,19,I feel pleasant.,reverse,3,often,False,False,95,Often pleasant indicates calm.
+trauma_relaxation_stai,interpersonal,sunset,0,I feel calm.,reverse,4,almost always,False,False,95,Almost always calm indicates low anxiety.
+trauma_relaxation_stai,interpersonal,sunset,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,interpersonal,sunset,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,4,I feel at ease.,reverse,4,almost always,False,False,95,Almost always at ease is not anxious.
+trauma_relaxation_stai,interpersonal,sunset,5,I feel upset.,direct,1,almost never,False,False,95,Almost never upset indicates calm.
+trauma_relaxation_stai,interpersonal,sunset,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,7,I feel satisfied.,reverse,3,often,False,False,95,Often satisfied is not anxious.
+trauma_relaxation_stai,interpersonal,sunset,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,95,Almost always comfortable is calm.
+trauma_relaxation_stai,interpersonal,sunset,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident suggests anxiety.
+trauma_relaxation_stai,interpersonal,sunset,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,12,I am jittery.,direct,3,often,True,False,95,Often jittery indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,13,I feel indecisive.,direct,2,occasionally,False,False,95,Occasionally indecisive is not elevated.
+trauma_relaxation_stai,interpersonal,sunset,14,I am relaxed.,reverse,3,often,False,False,95,Often relaxed is not anxious.
+trauma_relaxation_stai,interpersonal,sunset,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,16,I am worried.,direct,3,often,True,False,95,Often worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,interpersonal,sunset,19,I feel pleasant.,reverse,4,almost always,False,False,95,Almost always pleasant is not anxious.
+trauma_relaxation_stai,interpersonal,body,0,I feel calm.,reverse,1,almost never,True,False,95,"Choosing 'almost never' for 'I feel calm' indicates lack of calm, consistent with anxiety."
+trauma_relaxation_stai,interpersonal,body,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never feeling secure suggests high anxiety.
+trauma_relaxation_stai,interpersonal,body,2,I am tense.,direct,4,almost always,True,False,95,Choosing 'almost always' for tense indicates high anxiety.
+trauma_relaxation_stai,interpersonal,body,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained is consistent with elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,interpersonal,body,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset suggests high anxiety.
+trauma_relaxation_stai,interpersonal,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,body,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied is consistent with anxiety.
+trauma_relaxation_stai,interpersonal,body,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates high anxiety.
+trauma_relaxation_stai,interpersonal,body,9,I feel comfortable.,reverse,4,almost always,False,False,95,"Almost always comfortable suggests calm, not anxious."
+trauma_relaxation_stai,interpersonal,body,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,interpersonal,body,11,I feel nervous.,direct,4,almost always,True,False,95,Almost always nervous is clearly anxious.
+trauma_relaxation_stai,interpersonal,body,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,interpersonal,body,13,I feel indecisive.,direct,4,almost always,True,False,90,Almost always indecisive is consistent with anxiety.
+trauma_relaxation_stai,interpersonal,body,14,I am relaxed.,reverse,1,almost never,True,False,95,Almost never relaxed indicates high anxiety.
+trauma_relaxation_stai,interpersonal,body,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content suggests anxiety.
+trauma_relaxation_stai,interpersonal,body,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried is clearly anxious.
+trauma_relaxation_stai,interpersonal,body,17,I feel confused.,direct,3,often,True,False,90,Often confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,body,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady suggests anxiety.
+trauma_relaxation_stai,interpersonal,body,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,100,Almost always calm indicates no anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure indicates insecurity/anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,2,I am tense.,direct,1,almost never,False,False,100,Almost never tense indicates calm.
+trauma_relaxation_stai,interpersonal,chatgpt,3,I feel strained.,direct,1,almost never,False,False,100,Almost never strained indicates no strain.
+trauma_relaxation_stai,interpersonal,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,100,Almost always at ease indicates calm.
+trauma_relaxation_stai,interpersonal,chatgpt,5,I feel upset.,direct,2,occasionally,False,False,80,"Occasionally upset is moderate, not elevated anxiety."
+trauma_relaxation_stai,interpersonal,chatgpt,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,100,Almost never worrying indicates no anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,7,I feel satisfied.,reverse,3,often,False,False,100,Often satisfied indicates contentment.
+trauma_relaxation_stai,interpersonal,chatgpt,8,I feel frightened.,direct,1,almost never,False,False,100,Almost never frightened indicates calm.
+trauma_relaxation_stai,interpersonal,chatgpt,9,I feel comfortable.,reverse,4,almost always,False,False,100,Almost always comfortable indicates ease.
+trauma_relaxation_stai,interpersonal,chatgpt,10,I feel self-confident.,reverse,3,often,False,False,100,Often self-confident indicates confidence.
+trauma_relaxation_stai,interpersonal,chatgpt,11,I feel nervous.,direct,3,often,True,False,100,Often nervous indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,12,I am jittery.,direct,2,occasionally,False,False,100,Occasionally jittery is not high anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,100,Occasionally indecisive is moderate.
+trauma_relaxation_stai,interpersonal,chatgpt,14,I am relaxed.,reverse,3,often,False,False,100,Often relaxed indicates calm.
+trauma_relaxation_stai,interpersonal,chatgpt,15,I feel content.,reverse,3,often,False,False,100,Often content indicates satisfaction.
+trauma_relaxation_stai,interpersonal,chatgpt,16,I am worried.,direct,3,often,True,False,100,Often worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates high anxiety.
+trauma_relaxation_stai,interpersonal,chatgpt,18,I feel steady.,reverse,4,almost always,False,False,100,Almost always steady indicates stability.
+trauma_relaxation_stai,interpersonal,chatgpt,19,I feel pleasant.,reverse,3,often,False,False,100,Often pleasant indicates contentment.
+trauma_relaxation_stai,interpersonal,vacuum,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,13,I feel indecisive.,direct,2,occasionally,False,False,70,Occasionally indecisive is not elevated anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,95,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,16,I am worried.,direct,3,often,True,False,95,Often worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,interpersonal,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,accident,generic,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,accident,generic,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,accident,generic,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,accident,generic,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,accident,generic,4,I feel at ease.,reverse,2,occasionally,True,False,70,Occasionally at ease suggests some anxiety.
+trauma_relaxation_stai,accident,generic,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates high anxiety.
+trauma_relaxation_stai,accident,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Often worrying indicates anxiety.
+trauma_relaxation_stai,accident,generic,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,accident,generic,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,accident,generic,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,accident,generic,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,accident,generic,11,I feel nervous.,direct,3,often,True,False,90,Often nervous indicates anxiety.
+trauma_relaxation_stai,accident,generic,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,accident,generic,13,I feel indecisive.,direct,2,occasionally,False,False,70,"Occasionally indecisive is moderate, not anxious."
+trauma_relaxation_stai,accident,generic,14,I am relaxed.,reverse,3,often,False,False,90,"Often relaxed indicates calm, not anxious."
+trauma_relaxation_stai,accident,generic,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,accident,generic,16,I am worried.,direct,3,often,True,False,90,Often worried indicates anxiety.
+trauma_relaxation_stai,accident,generic,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,accident,generic,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,accident,generic,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,accident,indian,0,I feel calm.,reverse,1,almost never,True,False,95,"Option 2=almost never calm, high anxiety."
+trauma_relaxation_stai,accident,indian,1,I feel secure.,reverse,1,almost never,True,False,95,"Option 4=almost never secure, anxious."
+trauma_relaxation_stai,accident,indian,2,I am tense.,direct,4,almost always,True,False,95,"Option 3=almost always tense, anxious."
+trauma_relaxation_stai,accident,indian,3,I feel strained.,direct,4,almost always,True,False,95,"Option 3=almost always strained, anxious."
+trauma_relaxation_stai,accident,indian,4,I feel at ease.,reverse,2,occasionally,True,False,80,"Option 1=occasionally at ease, mild anxiety."
+trauma_relaxation_stai,accident,indian,5,I feel upset.,direct,3,often,True,False,95,"Option 4=often upset, anxious."
+trauma_relaxation_stai,accident,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,"Option 1=often worrying, anxious."
+trauma_relaxation_stai,accident,indian,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Option 4=almost never satisfied, anxious."
+trauma_relaxation_stai,accident,indian,8,I feel frightened.,direct,4,almost always,True,False,95,"Option 4=almost always frightened, anxious."
+trauma_relaxation_stai,accident,indian,9,I feel comfortable.,reverse,2,occasionally,True,False,85,"Option 3=occasionally comfortable, some anxiety."
+trauma_relaxation_stai,accident,indian,10,I feel self-confident.,reverse,2,occasionally,True,False,85,"Option 2=occasionally self-confident, low confidence."
+trauma_relaxation_stai,accident,indian,11,I feel nervous.,direct,3,often,True,False,95,"Option 1=often nervous, anxious."
+trauma_relaxation_stai,accident,indian,12,I am jittery.,direct,3,often,True,False,95,"Option 2=often jittery, anxious."
+trauma_relaxation_stai,accident,indian,13,I feel indecisive.,direct,4,almost always,True,False,95,"Option 2=almost always indecisive, anxious."
+trauma_relaxation_stai,accident,indian,14,I am relaxed.,reverse,3,often,False,False,95,"Option 4=often relaxed, calm."
+trauma_relaxation_stai,accident,indian,15,I feel content.,reverse,4,almost always,False,False,95,"Option 3=almost always content, calm."
+trauma_relaxation_stai,accident,indian,16,I am worried.,direct,3,often,True,False,95,"Option 1=often worried, anxious."
+trauma_relaxation_stai,accident,indian,17,I feel confused.,direct,3,often,True,False,95,"Option 3=often confused, anxious."
+trauma_relaxation_stai,accident,indian,18,I feel steady.,reverse,1,almost never,True,False,95,"Option 3=almost never steady, anxious."
+trauma_relaxation_stai,accident,indian,19,I feel pleasant.,reverse,3,often,False,False,95,"Option 1=often pleasant, calm."
+trauma_relaxation_stai,accident,sunset,0,I feel calm.,reverse,1,almost never,True,False,95,"Chose 'almost never' for feeling calm, indicates high anxiety."
+trauma_relaxation_stai,accident,sunset,1,I feel secure.,reverse,1,almost never,True,False,95,"Chose 'almost never' for feeling secure, indicates anxiety."
+trauma_relaxation_stai,accident,sunset,2,I am tense.,direct,4,almost always,True,False,95,"Chose 'almost always' for tense, strongly anxious."
+trauma_relaxation_stai,accident,sunset,3,I feel strained.,direct,4,almost always,True,False,95,"Chose 'almost always' for strained, indicates high anxiety."
+trauma_relaxation_stai,accident,sunset,4,I feel at ease.,reverse,4,almost always,False,False,95,"Chose 'almost always' for at ease, indicates calm."
+trauma_relaxation_stai,accident,sunset,5,I feel upset.,direct,4,almost always,True,False,95,"Chose 'almost always' for upset, strongly anxious."
+trauma_relaxation_stai,accident,sunset,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,"Chose 'often' for worrying, indicates anxiety."
+trauma_relaxation_stai,accident,sunset,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Chose 'almost never' for satisfied, indicates dissatisfaction/anxiety."
+trauma_relaxation_stai,accident,sunset,8,I feel frightened.,direct,4,almost always,True,False,95,"Chose 'almost always' for frightened, strongly anxious."
+trauma_relaxation_stai,accident,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,95,"Chose 'almost always' for comfortable, indicates calm."
+trauma_relaxation_stai,accident,sunset,10,I feel self-confident.,reverse,2,occasionally,False,False,85,"Chose 'occasionally' for self-confident, mid-range not anxious."
+trauma_relaxation_stai,accident,sunset,11,I feel nervous.,direct,3,often,True,False,95,"Chose 'often' for nervous, indicates anxiety."
+trauma_relaxation_stai,accident,sunset,12,I am jittery.,direct,3,often,True,False,95,"Chose 'often' for jittery, indicates anxiety."
+trauma_relaxation_stai,accident,sunset,13,I feel indecisive.,direct,2,occasionally,False,False,85,"Chose 'occasionally' for indecisive, moderate not high anxiety."
+trauma_relaxation_stai,accident,sunset,14,I am relaxed.,reverse,3,often,False,False,95,"Chose 'often' for relaxed, indicates calm."
+trauma_relaxation_stai,accident,sunset,15,I feel content.,reverse,3,often,False,False,95,"Chose 'often' for content, indicates calm."
+trauma_relaxation_stai,accident,sunset,16,I am worried.,direct,4,almost always,True,False,95,"Chose 'almost always' for worried, strongly anxious."
+trauma_relaxation_stai,accident,sunset,17,I feel confused.,direct,4,almost always,True,False,95,"Chose 'almost always' for confused, indicates anxiety."
+trauma_relaxation_stai,accident,sunset,18,I feel steady.,reverse,1,almost never,True,False,95,"Chose 'almost never' for steady, indicates lack of steadiness/anxiety."
+trauma_relaxation_stai,accident,sunset,19,I feel pleasant.,reverse,4,almost always,False,False,95,"Chose 'almost always' for pleasant, indicates calm."
+trauma_relaxation_stai,accident,body,0,I feel calm.,reverse,1,almost never,True,False,90,Choosing 'almost never' for calm indicates elevated anxiety.
+trauma_relaxation_stai,accident,body,1,I feel secure.,reverse,1,almost never,True,False,90,"'Almost never' secure suggests lack of security, anxious."
+trauma_relaxation_stai,accident,body,2,I am tense.,direct,4,almost always,True,False,90,Choosing 'almost always' for tense is consistent with anxiety.
+trauma_relaxation_stai,accident,body,3,I feel strained.,direct,4,almost always,True,False,90,'Almost always' strained indicates high anxiety.
+trauma_relaxation_stai,accident,body,4,I feel at ease.,reverse,2,occasionally,True,False,80,"Occasionally at ease suggests some tension, elevated anxiety."
+trauma_relaxation_stai,accident,body,5,I feel upset.,direct,4,almost always,True,False,90,Almost always upset is strong anxiety indicator.
+trauma_relaxation_stai,accident,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Often worrying indicates anxiety.
+trauma_relaxation_stai,accident,body,7,I feel satisfied.,reverse,1,almost never,True,False,90,Almost never satisfied is clear anxiety sign.
+trauma_relaxation_stai,accident,body,8,I feel frightened.,direct,4,almost always,True,False,90,Almost always frightened indicates high anxiety.
+trauma_relaxation_stai,accident,body,9,I feel comfortable.,reverse,2,occasionally,True,False,80,"Occasionally comfortable suggests unease, anxiety."
+trauma_relaxation_stai,accident,body,10,I feel self-confident.,reverse,1,almost never,True,False,90,Almost never self-confident is anxiety indicator.
+trauma_relaxation_stai,accident,body,11,I feel nervous.,direct,3,often,True,False,90,Often nervous indicates elevated anxiety.
+trauma_relaxation_stai,accident,body,12,I am jittery.,direct,4,almost always,True,False,90,Almost always jittery is high anxiety.
+trauma_relaxation_stai,accident,body,13,I feel indecisive.,direct,2,occasionally,True,False,80,Occasionally indecisive suggests some anxiety.
+trauma_relaxation_stai,accident,body,14,I am relaxed.,reverse,1,almost never,True,False,90,Almost never relaxed is clear anxiety indicator.
+trauma_relaxation_stai,accident,body,15,I feel content.,reverse,1,almost never,True,False,90,Almost never content indicates anxiety.
+trauma_relaxation_stai,accident,body,16,I am worried.,direct,4,almost always,True,False,90,Almost always worried is strong anxiety sign.
+trauma_relaxation_stai,accident,body,17,I feel confused.,direct,4,almost always,True,False,90,Almost always confused indicates high anxiety.
+trauma_relaxation_stai,accident,body,18,I feel steady.,reverse,1,almost never,True,False,90,Almost never steady points to anxiety.
+trauma_relaxation_stai,accident,body,19,I feel pleasant.,reverse,1,almost never,True,False,90,Almost never pleasant is clear anxiety indicator.
+trauma_relaxation_stai,accident,winter,0,I feel calm.,reverse,4,almost always,False,False,95,Feeling calm almost always indicates low anxiety.
+trauma_relaxation_stai,accident,winter,1,I feel secure.,reverse,1,almost never,True,False,90,Feeling secure almost never suggests high anxiety.
+trauma_relaxation_stai,accident,winter,2,I am tense.,direct,4,almost always,True,False,95,Being tense almost always is a clear anxiety indicator.
+trauma_relaxation_stai,accident,winter,3,I feel strained.,direct,4,almost always,True,False,95,Feeling strained almost always indicates anxiety.
+trauma_relaxation_stai,accident,winter,4,I feel at ease.,reverse,2,occasionally,True,False,80,Feeling at ease occasionally indicates moderate-high anxiety.
+trauma_relaxation_stai,accident,winter,5,I feel upset.,direct,4,almost always,True,False,95,Feeling upset almost always indicates high anxiety.
+trauma_relaxation_stai,accident,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Worrying often is consistent with anxiety.
+trauma_relaxation_stai,accident,winter,7,I feel satisfied.,reverse,1,almost never,True,False,95,Feeling satisfied almost never indicates anxiety.
+trauma_relaxation_stai,accident,winter,8,I feel frightened.,direct,3,often,True,False,90,Feeling frightened often indicates anxiety.
+trauma_relaxation_stai,accident,winter,9,I feel comfortable.,reverse,1,almost never,True,False,95,Feeling comfortable almost never is anxious.
+trauma_relaxation_stai,accident,winter,10,I feel self-confident.,reverse,2,occasionally,True,False,80,"Self-confident occasionally indicates lower confidence, anxiety."
+trauma_relaxation_stai,accident,winter,11,I feel nervous.,direct,3,often,True,False,90,Feeling nervous often indicates anxiety.
+trauma_relaxation_stai,accident,winter,12,I am jittery.,direct,3,often,True,False,90,Being jittery often indicates anxiety.
+trauma_relaxation_stai,accident,winter,13,I feel indecisive.,direct,3,often,True,False,90,Indecisive often indicates anxiety.
+trauma_relaxation_stai,accident,winter,14,I am relaxed.,reverse,3,often,False,False,90,Feeling relaxed often indicates low anxiety.
+trauma_relaxation_stai,accident,winter,15,I feel content.,reverse,1,almost never,True,False,95,Feeling content almost never indicates anxiety.
+trauma_relaxation_stai,accident,winter,16,I am worried.,direct,4,almost always,True,False,95,Worried almost always indicates high anxiety.
+trauma_relaxation_stai,accident,winter,17,I feel confused.,direct,4,almost always,True,False,95,Confused almost always indicates anxiety.
+trauma_relaxation_stai,accident,winter,18,I feel steady.,reverse,1,almost never,True,False,95,Feeling steady almost never indicates anxiety.
+trauma_relaxation_stai,accident,winter,19,I feel pleasant.,reverse,1,almost never,True,False,95,Feeling pleasant almost never indicates anxiety.
+trauma_relaxation_stai,accident,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,95,Almost always calm indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,1,I feel secure.,reverse,4,almost always,False,False,95,Almost always secure indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,2,I am tense.,direct,1,almost never,False,False,95,Almost never tense indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates high anxiety.
+trauma_relaxation_stai,accident,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,95,Almost always at ease indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,5,I feel upset.,direct,1,almost never,False,False,95,Almost never upset indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Almost never worrying indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,7,I feel satisfied.,reverse,3,often,False,False,95,Often satisfied indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,8,I feel frightened.,direct,1,almost never,False,False,95,Almost never frightened indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,9,I feel comfortable.,reverse,4,almost always,False,False,95,Almost always comfortable indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,10,I feel self-confident.,reverse,2,occasionally,False,False,95,"Occasional self-confidence is moderate, not elevated."
+trauma_relaxation_stai,accident,chatgpt,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates high anxiety.
+trauma_relaxation_stai,accident,chatgpt,12,I am jittery.,direct,2,occasionally,False,False,95,"Occasionally jittery is low frequency, not elevated."
+trauma_relaxation_stai,accident,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,95,"Occasionally indecisive is moderate, not elevated."
+trauma_relaxation_stai,accident,chatgpt,14,I am relaxed.,reverse,3,often,False,False,95,Often relaxed indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,15,I feel content.,reverse,3,often,False,False,95,Often content indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried indicates high anxiety.
+trauma_relaxation_stai,accident,chatgpt,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates high anxiety.
+trauma_relaxation_stai,accident,chatgpt,18,I feel steady.,reverse,4,almost always,False,False,95,Almost always steady indicates low anxiety.
+trauma_relaxation_stai,accident,chatgpt,19,I feel pleasant.,reverse,4,almost always,False,False,95,Almost always pleasant indicates low anxiety.
+trauma_relaxation_stai,accident,vacuum,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure suggests anxiety.
+trauma_relaxation_stai,accident,vacuum,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,Often worrying indicates elevated anxiety.
+trauma_relaxation_stai,accident,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,90,Almost never self-confident suggests anxiety.
+trauma_relaxation_stai,accident,vacuum,11,I feel nervous.,direct,4,almost always,True,False,95,Almost always nervous indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,13,I feel indecisive.,direct,3,often,True,False,85,Often indecisive can indicate anxiety.
+trauma_relaxation_stai,accident,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,95,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,16,I am worried.,direct,3,often,True,False,90,Often worried indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,accident,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,ambush,indian,0,I feel calm.,reverse,4,almost always,False,False,100,"Chose ""almost always"" for calm, indicating calm state."
+trauma_relaxation_stai,ambush,indian,1,I feel secure.,reverse,1,almost never,True,False,100,"Chose ""almost never"" for secure, indicating anxiety."
+trauma_relaxation_stai,ambush,indian,2,I am tense.,direct,4,almost always,True,False,100,"Chose ""almost always"" for tense, high anxiety."
+trauma_relaxation_stai,ambush,indian,3,I feel strained.,direct,4,almost always,True,False,100,"Chose ""almost always"" for strained, high anxiety."
+trauma_relaxation_stai,ambush,indian,4,I feel at ease.,reverse,4,almost always,False,False,100,"Chose ""almost always"" for at ease, calm."
+trauma_relaxation_stai,ambush,indian,5,I feel upset.,direct,1,almost never,False,False,100,"Chose ""almost never"" for upset, calm."
+trauma_relaxation_stai,ambush,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,"Chose ""often"" for worrying, indicates anxiety."
+trauma_relaxation_stai,ambush,indian,7,I feel satisfied.,reverse,3,often,False,False,100,"Chose ""often"" for satisfied, calm."
+trauma_relaxation_stai,ambush,indian,8,I feel frightened.,direct,1,almost never,False,False,100,"Chose ""almost never"" for frightened, calm."
+trauma_relaxation_stai,ambush,indian,9,I feel comfortable.,reverse,1,almost never,True,False,100,"Chose ""almost never"" for comfortable, anxious."
+trauma_relaxation_stai,ambush,indian,10,I feel self-confident.,reverse,4,almost always,False,False,100,"Chose ""almost always"" for self-confident, calm."
+trauma_relaxation_stai,ambush,indian,11,I feel nervous.,direct,4,almost always,True,False,100,"Chose ""almost always"" for nervous, anxiety."
+trauma_relaxation_stai,ambush,indian,12,I am jittery.,direct,3,often,True,False,100,"Chose ""often"" for jittery, indicates anxiety."
+trauma_relaxation_stai,ambush,indian,13,I feel indecisive.,direct,2,occasionally,False,False,100,"Chose ""occasionally"" for indecisive, low anxiety."
+trauma_relaxation_stai,ambush,indian,14,I am relaxed.,reverse,3,often,False,False,100,"Chose ""often"" for relaxed, calm."
+trauma_relaxation_stai,ambush,indian,15,I feel content.,reverse,3,often,False,False,100,"Chose ""often"" for content, calm."
+trauma_relaxation_stai,ambush,indian,16,I am worried.,direct,4,almost always,True,False,100,"Chose ""almost always"" for worried, anxious."
+trauma_relaxation_stai,ambush,indian,17,I feel confused.,direct,4,almost always,True,False,100,"Chose ""almost always"" for confused, anxious."
+trauma_relaxation_stai,ambush,indian,18,I feel steady.,reverse,1,almost never,True,False,100,"Chose ""almost never"" for steady, anxious."
+trauma_relaxation_stai,ambush,indian,19,I feel pleasant.,reverse,3,often,False,False,100,"Chose ""often"" for pleasant, calm."
+trauma_relaxation_stai,ambush,generic,0,I feel calm.,reverse,1,almost never,True,False,95,"Chose 'almost never' for calm, indicating low calmness."
+trauma_relaxation_stai,ambush,generic,1,I feel secure.,reverse,1,almost never,True,False,95,"Chose 'almost never' for secure, indicating insecurity."
+trauma_relaxation_stai,ambush,generic,2,I am tense.,direct,4,almost always,True,False,95,"Chose 'almost always' for tense, indicating high tension."
+trauma_relaxation_stai,ambush,generic,3,I feel strained.,direct,4,almost always,True,False,95,"Chose 'almost always' for strained, indicating strain."
+trauma_relaxation_stai,ambush,generic,4,I feel at ease.,reverse,1,almost never,True,False,95,"Chose 'almost never' for at ease, indicating unease."
+trauma_relaxation_stai,ambush,generic,5,I feel upset.,direct,4,almost always,True,False,95,"Chose 'almost always' for upset, indicating distress."
+trauma_relaxation_stai,ambush,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,"Chose 'often' for worrying, indicating anxiety."
+trauma_relaxation_stai,ambush,generic,7,I feel satisfied.,reverse,1,almost never,True,False,95,"Chose 'almost never' for satisfied, indicating dissatisfaction."
+trauma_relaxation_stai,ambush,generic,8,I feel frightened.,direct,4,almost always,True,False,95,"Chose 'almost always' for frightened, indicating fear."
+trauma_relaxation_stai,ambush,generic,9,I feel comfortable.,reverse,1,almost never,True,False,95,"Chose 'almost never' for comfortable, indicating discomfort."
+trauma_relaxation_stai,ambush,generic,10,I feel self-confident.,reverse,1,almost never,True,False,95,"Chose 'almost never' for self-confident, indicating lack of confidence."
+trauma_relaxation_stai,ambush,generic,11,I feel nervous.,direct,3,often,True,False,95,"Chose 'often' for nervous, indicating nervousness."
+trauma_relaxation_stai,ambush,generic,12,I am jittery.,direct,4,almost always,True,False,95,"Chose 'almost always' for jittery, indicating high jitteriness."
+trauma_relaxation_stai,ambush,generic,13,I feel indecisive.,direct,4,almost always,True,False,95,"Chose 'almost always' for indecisive, indicating indecisiveness."
+trauma_relaxation_stai,ambush,generic,14,I am relaxed.,reverse,4,almost always,False,False,95,"Chose 'almost always' for relaxed, indicating calm."
+trauma_relaxation_stai,ambush,generic,15,I feel content.,reverse,1,almost never,True,False,95,"Chose 'almost never' for content, indicating discontent."
+trauma_relaxation_stai,ambush,generic,16,I am worried.,direct,4,almost always,True,False,95,"Chose 'almost always' for worried, indicating high worry."
+trauma_relaxation_stai,ambush,generic,17,I feel confused.,direct,4,almost always,True,False,95,"Chose 'almost always' for confused, indicating confusion."
+trauma_relaxation_stai,ambush,generic,18,I feel steady.,reverse,1,almost never,True,False,95,"Chose 'almost never' for steady, indicating unsteadiness."
+trauma_relaxation_stai,ambush,generic,19,I feel pleasant.,reverse,1,almost never,True,False,95,"Chose 'almost never' for pleasant, indicating unpleasantness."
+trauma_relaxation_stai,ambush,winter,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates elevated anxiety.
+trauma_relaxation_stai,ambush,winter,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates elevated anxiety.
+trauma_relaxation_stai,ambush,winter,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,ambush,winter,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates moderate anxiety.
+trauma_relaxation_stai,ambush,winter,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,ambush,winter,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,ambush,winter,10,I feel self-confident.,reverse,1,almost never,True,False,90,Almost never self-confident suggests anxiety.
+trauma_relaxation_stai,ambush,winter,11,I feel nervous.,direct,4,almost always,True,False,95,Almost always nervous indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,ambush,winter,14,I am relaxed.,reverse,4,almost always,False,False,95,Almost always relaxed indicates calm.
+trauma_relaxation_stai,ambush,winter,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,ambush,winter,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried indicates high anxiety.
+trauma_relaxation_stai,ambush,winter,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,ambush,winter,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,ambush,winter,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,ambush,body,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates anxiety.
+trauma_relaxation_stai,ambush,body,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,ambush,body,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates anxiety.
+trauma_relaxation_stai,ambush,body,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,ambush,body,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,ambush,body,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates anxiety.
+trauma_relaxation_stai,ambush,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,ambush,body,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,ambush,body,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,ambush,body,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,ambush,body,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,ambush,body,11,I feel nervous.,direct,4,almost always,True,False,95,Almost always nervous indicates anxiety.
+trauma_relaxation_stai,ambush,body,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,ambush,body,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,ambush,body,14,I am relaxed.,reverse,1,almost never,True,False,95,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,ambush,body,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,ambush,body,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried indicates anxiety.
+trauma_relaxation_stai,ambush,body,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,ambush,body,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,ambush,body,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,ambush,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,100,Almost always calm indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,1,I feel secure.,reverse,4,almost always,False,False,100,Almost always secure indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,2,I am tense.,direct,1,almost never,False,False,100,Almost never tense indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,3,I feel strained.,direct,2,occasionally,False,False,80,Occasionally strained is not elevated anxiety.
+trauma_relaxation_stai,ambush,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,100,Almost always at ease indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,5,I feel upset.,direct,1,almost never,False,False,100,Almost never upset indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,100,Almost never worrying indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,7,I feel satisfied.,reverse,2,occasionally,False,False,80,"Occasionally satisfied is neutral, not anxious."
+trauma_relaxation_stai,ambush,chatgpt,8,I feel frightened.,direct,1,almost never,False,False,100,Almost never frightened indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,9,I feel comfortable.,reverse,4,almost always,False,False,100,Almost always comfortable indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,10,I feel self-confident.,reverse,3,often,False,False,100,Often self-confident indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,11,I feel nervous.,direct,1,almost never,False,False,100,Almost never nervous indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,12,I am jittery.,direct,1,almost never,False,False,100,Almost never jittery indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,80,Occasionally indecisive is not high anxiety.
+trauma_relaxation_stai,ambush,chatgpt,14,I am relaxed.,reverse,3,often,False,False,100,Often relaxed indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,15,I feel content.,reverse,4,almost always,False,False,100,Almost always content indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,16,I am worried.,direct,3,often,True,False,100,Often worried indicates elevated anxiety.
+trauma_relaxation_stai,ambush,chatgpt,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates elevated anxiety.
+trauma_relaxation_stai,ambush,chatgpt,18,I feel steady.,reverse,4,almost always,False,False,100,Almost always steady indicates low anxiety.
+trauma_relaxation_stai,ambush,chatgpt,19,I feel pleasant.,reverse,3,often,False,False,100,Often pleasant indicates low anxiety.
+trauma_relaxation_stai,ambush,vacuum,0,I feel calm.,reverse,1,almost never,True,False,100,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,ambush,vacuum,1,I feel secure.,reverse,1,almost never,True,False,100,Almost never secure indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,2,I am tense.,direct,4,almost always,True,False,100,Almost always tense indicates high anxiety.
+trauma_relaxation_stai,ambush,vacuum,3,I feel strained.,direct,4,almost always,True,False,100,Almost always strained indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,100,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,5,I feel upset.,direct,4,almost always,True,False,100,Almost always upset indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,100,Often worrying indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,100,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,8,I feel frightened.,direct,4,almost always,True,False,100,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,100,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,100,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,11,I feel nervous.,direct,4,almost always,True,False,100,Almost always nervous indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,12,I am jittery.,direct,4,almost always,True,False,100,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,13,I feel indecisive.,direct,4,almost always,True,False,100,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,100,Almost never relaxed indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,15,I feel content.,reverse,1,almost never,True,False,100,Almost never content indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,16,I am worried.,direct,4,almost always,True,False,100,Almost always worried indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,18,I feel steady.,reverse,1,almost never,True,False,100,Almost never steady indicates anxiety.
+trauma_relaxation_stai,ambush,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,100,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,ambush,sunset,0,I feel calm.,reverse,4,almost always,False,False,95,Choosing 'almost always' for calm indicates low anxiety.
+trauma_relaxation_stai,ambush,sunset,1,I feel secure.,reverse,1,almost never,True,False,90,'Almost never' secure suggests anxiety.
+trauma_relaxation_stai,ambush,sunset,2,I am tense.,direct,4,almost always,True,False,95,'Almost always' tense is high anxiety.
+trauma_relaxation_stai,ambush,sunset,3,I feel strained.,direct,4,almost always,True,False,95,'Almost always' strained indicates anxiety.
+trauma_relaxation_stai,ambush,sunset,4,I feel at ease.,reverse,4,almost always,False,False,90,'Almost always' at ease is calm.
+trauma_relaxation_stai,ambush,sunset,5,I feel upset.,direct,1,almost never,False,False,90,'Almost never' upset indicates calm.
+trauma_relaxation_stai,ambush,sunset,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,90,'Almost never' worry suggests calm.
+trauma_relaxation_stai,ambush,sunset,7,I feel satisfied.,reverse,2,occasionally,False,False,70,"'Occasionally' satisfied is neutral, not clearly anxious."
+trauma_relaxation_stai,ambush,sunset,8,I feel frightened.,direct,1,almost never,False,False,95,'Almost never' frightened indicates calm.
+trauma_relaxation_stai,ambush,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,95,'Almost always' comfortable is calm.
+trauma_relaxation_stai,ambush,sunset,10,I feel self-confident.,reverse,2,occasionally,False,False,60,'Occasionally' self-confident is neutral.
+trauma_relaxation_stai,ambush,sunset,11,I feel nervous.,direct,4,almost always,True,False,95,'Almost always' nervous indicates anxiety.
+trauma_relaxation_stai,ambush,sunset,12,I am jittery.,direct,4,almost always,True,False,95,'Almost always' jittery is anxious.
+trauma_relaxation_stai,ambush,sunset,13,I feel indecisive.,direct,4,almost always,True,False,90,'Almost always' indecisive suggests anxiety.
+trauma_relaxation_stai,ambush,sunset,14,I am relaxed.,reverse,3,often,False,False,80,'Often' relaxed indicates low anxiety.
+trauma_relaxation_stai,ambush,sunset,15,I feel content.,reverse,3,often,False,False,80,'Often' content is calm.
+trauma_relaxation_stai,ambush,sunset,16,I am worried.,direct,3,often,True,False,80,'Often' worried indicates elevated anxiety.
+trauma_relaxation_stai,ambush,sunset,17,I feel confused.,direct,4,almost always,True,False,90,'Almost always' confused suggests anxiety.
+trauma_relaxation_stai,ambush,sunset,18,I feel steady.,reverse,1,almost never,True,False,85,'Almost never' steady indicates anxiety.
+trauma_relaxation_stai,ambush,sunset,19,I feel pleasant.,reverse,3,often,False,False,80,'Often' pleasant indicates calm.
+trauma_relaxation_stai,neutral,generic,0,I feel calm.,reverse,4,almost always,False,False,95,"Chose 'almost always' for calm, indicating non-anxious."
+trauma_relaxation_stai,neutral,generic,1,I feel secure.,reverse,4,almost always,False,False,95,"Chose 'almost always' for secure, indicating calm."
+trauma_relaxation_stai,neutral,generic,2,I am tense.,direct,1,almost never,False,False,95,"Chose 'almost never' for tense, indicating no anxiety."
+trauma_relaxation_stai,neutral,generic,3,I feel strained.,direct,1,almost never,False,False,95,"Chose 'almost never' for strained, indicating calm."
+trauma_relaxation_stai,neutral,generic,4,I feel at ease.,reverse,4,almost always,False,False,95,"Chose 'almost always' for at ease, indicating calm."
+trauma_relaxation_stai,neutral,generic,5,I feel upset.,direct,1,almost never,False,False,95,"Chose 'almost never' for upset, indicating calm."
+trauma_relaxation_stai,neutral,generic,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,"Chose 'almost never' for worrying, indicating calm."
+trauma_relaxation_stai,neutral,generic,7,I feel satisfied.,reverse,2,occasionally,False,False,70,"Chose 'occasionally' for satisfied, not strongly anxious."
+trauma_relaxation_stai,neutral,generic,8,I feel frightened.,direct,1,almost never,False,False,95,"Chose 'almost never' for frightened, indicating calm."
+trauma_relaxation_stai,neutral,generic,9,I feel comfortable.,reverse,4,almost always,False,False,95,"Chose 'almost always' for comfortable, indicating calm."
+trauma_relaxation_stai,neutral,generic,10,I feel self-confident.,reverse,4,almost always,False,False,95,"Chose 'almost always' for self-confident, indicating calm."
+trauma_relaxation_stai,neutral,generic,11,I feel nervous.,direct,1,almost never,False,False,95,"Chose 'almost never' for nervous, indicating calm."
+trauma_relaxation_stai,neutral,generic,12,I am jittery.,direct,1,almost never,False,False,95,"Chose 'almost never' for jittery, indicating calm."
+trauma_relaxation_stai,neutral,generic,13,I feel indecisive.,direct,2,occasionally,False,False,70,"Chose 'occasionally' for indecisive, not clearly anxious."
+trauma_relaxation_stai,neutral,generic,14,I am relaxed.,reverse,4,almost always,False,False,95,"Chose 'almost always' for relaxed, indicating calm."
+trauma_relaxation_stai,neutral,generic,15,I feel content.,reverse,4,almost always,False,False,95,"Chose 'almost always' for content, indicating calm."
+trauma_relaxation_stai,neutral,generic,16,I am worried.,direct,1,almost never,False,False,95,"Chose 'almost never' for worried, indicating calm."
+trauma_relaxation_stai,neutral,generic,17,I feel confused.,direct,2,occasionally,False,False,70,"Chose 'occasionally' for confused, not strongly anxious."
+trauma_relaxation_stai,neutral,generic,18,I feel steady.,reverse,4,almost always,False,False,95,"Chose 'almost always' for steady, indicating calm."
+trauma_relaxation_stai,neutral,generic,19,I feel pleasant.,reverse,3,often,False,False,95,"Chose 'often' for pleasant, indicating calm."
+trauma_relaxation_stai,neutral,sunset,0,I feel calm.,reverse,4,almost always,False,False,90,"Chose 'almost always' for calm, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,1,I feel secure.,reverse,4,almost always,False,False,90,"Chose 'almost always' for secure, indicating calm."
+trauma_relaxation_stai,neutral,sunset,2,I am tense.,direct,1,almost never,False,False,90,"Chose 'almost never' for tense, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,3,I feel strained.,direct,1,almost never,False,False,90,"Chose 'almost never' for strained, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,4,I feel at ease.,reverse,4,almost always,False,False,90,"Chose 'almost always' for at ease, indicating calm."
+trauma_relaxation_stai,neutral,sunset,5,I feel upset.,direct,1,almost never,False,False,90,"Chose 'almost never' for upset, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,90,"Chose 'almost never' for worrying, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,7,I feel satisfied.,reverse,4,almost always,False,False,90,"Chose 'almost always' for satisfied, indicating calm."
+trauma_relaxation_stai,neutral,sunset,8,I feel frightened.,direct,1,almost never,False,False,90,"Chose 'almost never' for frightened, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,90,"Chose 'almost always' for comfortable, indicating calm."
+trauma_relaxation_stai,neutral,sunset,10,I feel self-confident.,reverse,3,often,False,False,90,"Chose 'often' for self-confident, indicating positive state."
+trauma_relaxation_stai,neutral,sunset,11,I feel nervous.,direct,1,almost never,False,False,90,"Chose 'almost never' for nervous, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,12,I am jittery.,direct,1,almost never,False,False,90,"Chose 'almost never' for jittery, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,13,I feel indecisive.,direct,1,almost never,False,False,90,"Chose 'almost never' for indecisive, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,14,I am relaxed.,reverse,3,often,False,False,90,"Chose 'often' for relaxed, indicating positive state."
+trauma_relaxation_stai,neutral,sunset,15,I feel content.,reverse,4,almost always,False,False,90,"Chose 'almost always' for content, indicating calm."
+trauma_relaxation_stai,neutral,sunset,16,I am worried.,direct,1,almost never,False,False,90,"Chose 'almost never' for worried, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,17,I feel confused.,direct,1,almost never,False,False,90,"Chose 'almost never' for confused, indicating low anxiety."
+trauma_relaxation_stai,neutral,sunset,18,I feel steady.,reverse,4,almost always,False,False,90,"Chose 'almost always' for steady, indicating calm."
+trauma_relaxation_stai,neutral,sunset,19,I feel pleasant.,reverse,3,often,False,False,90,"Chose 'often' for pleasant, indicating positive state."
+trauma_relaxation_stai,neutral,winter,0,I feel calm.,reverse,4,almost always,False,False,95,Chose 'almost always' for 'calm' – calm state.
+trauma_relaxation_stai,neutral,winter,1,I feel secure.,reverse,3,often,False,False,95,Chose 'often' for 'secure' – not anxious.
+trauma_relaxation_stai,neutral,winter,2,I am tense.,direct,1,almost never,False,False,95,Chose 'almost never' for 'tense' – not anxious.
+trauma_relaxation_stai,neutral,winter,3,I feel strained.,direct,2,occasionally,False,False,85,Chose 'occasionally' for strained – low frequency.
+trauma_relaxation_stai,neutral,winter,4,I feel at ease.,reverse,4,almost always,False,False,95,Chose 'almost always' for 'at ease' – calm.
+trauma_relaxation_stai,neutral,winter,5,I feel upset.,direct,1,almost never,False,False,95,Chose 'almost never' for upset – not anxious.
+trauma_relaxation_stai,neutral,winter,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Chose 'almost never' for worrying – calm.
+trauma_relaxation_stai,neutral,winter,7,I feel satisfied.,reverse,2,occasionally,False,False,80,"Chose 'occasionally' for satisfied – moderate, not elevated."
+trauma_relaxation_stai,neutral,winter,8,I feel frightened.,direct,1,almost never,False,False,95,Chose 'almost never' for frightened – calm.
+trauma_relaxation_stai,neutral,winter,9,I feel comfortable.,reverse,4,almost always,False,False,95,Chose 'almost always' for comfortable – calm.
+trauma_relaxation_stai,neutral,winter,10,I feel self-confident.,reverse,3,often,False,False,95,Chose 'often' for self-confident – not anxious.
+trauma_relaxation_stai,neutral,winter,11,I feel nervous.,direct,1,almost never,False,False,95,Chose 'almost never' for nervous – calm.
+trauma_relaxation_stai,neutral,winter,12,I am jittery.,direct,1,almost never,False,False,95,Chose 'almost never' for jittery – calm.
+trauma_relaxation_stai,neutral,winter,13,I feel indecisive.,direct,2,occasionally,False,False,85,Chose 'occasionally' for indecisive – low frequency.
+trauma_relaxation_stai,neutral,winter,14,I am relaxed.,reverse,4,almost always,False,False,95,Chose 'almost always' for relaxed – calm.
+trauma_relaxation_stai,neutral,winter,15,I feel content.,reverse,4,almost always,False,False,95,Chose 'almost always' for content – calm.
+trauma_relaxation_stai,neutral,winter,16,I am worried.,direct,1,almost never,False,False,95,Chose 'almost never' for worried – calm.
+trauma_relaxation_stai,neutral,winter,17,I feel confused.,direct,1,almost never,False,False,95,Chose 'almost never' for confused – calm.
+trauma_relaxation_stai,neutral,winter,18,I feel steady.,reverse,4,almost always,False,False,95,Chose 'almost always' for steady – calm.
+trauma_relaxation_stai,neutral,winter,19,I feel pleasant.,reverse,3,often,False,False,95,Chose 'often' for pleasant – not anxious.
+trauma_relaxation_stai,neutral,indian,0,I feel calm.,reverse,4,almost always,False,False,100,Almost always calm indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,1,I feel secure.,reverse,4,almost always,False,False,100,Almost always secure indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,2,I am tense.,direct,1,almost never,False,False,100,Almost never tense indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,3,I feel strained.,direct,1,almost never,False,False,100,Almost never strained indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,4,I feel at ease.,reverse,4,almost always,False,False,100,Almost always at ease indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,5,I feel upset.,direct,1,almost never,False,False,100,Almost never upset indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,100,Almost never worrying indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,7,I feel satisfied.,reverse,3,often,False,False,100,Often satisfied indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,8,I feel frightened.,direct,1,almost never,False,False,100,Almost never frightened indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,9,I feel comfortable.,reverse,4,almost always,False,False,100,Almost always comfortable indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,10,I feel self-confident.,reverse,2,occasionally,False,False,80,"Occasionally self-confident is moderate, not elevated."
+trauma_relaxation_stai,neutral,indian,11,I feel nervous.,direct,1,almost never,False,False,100,Almost never nervous indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,12,I am jittery.,direct,1,almost never,False,False,100,Almost never jittery indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,13,I feel indecisive.,direct,1,almost never,False,False,100,Almost never indecisive indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,14,I am relaxed.,reverse,4,almost always,False,False,100,Almost always relaxed indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,15,I feel content.,reverse,4,almost always,False,False,100,Almost always content indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,16,I am worried.,direct,1,almost never,False,False,100,Almost never worried indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,17,I feel confused.,direct,4,almost always,True,False,100,Almost always confused indicates high anxiety.
+trauma_relaxation_stai,neutral,indian,18,I feel steady.,reverse,3,often,False,False,100,Often steady indicates low anxiety.
+trauma_relaxation_stai,neutral,indian,19,I feel pleasant.,reverse,3,often,False,False,100,Often pleasant indicates low anxiety.
+trauma_relaxation_stai,neutral,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,95,Calm: almost always indicates relaxed state.
+trauma_relaxation_stai,neutral,chatgpt,1,I feel secure.,reverse,4,almost always,False,False,95,Secure: almost always indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,2,I am tense.,direct,1,almost never,False,False,95,Tense: almost never indicates not anxious.
+trauma_relaxation_stai,neutral,chatgpt,3,I feel strained.,direct,1,almost never,False,False,95,Strained: almost never indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,95,At ease: almost always indicates comfort.
+trauma_relaxation_stai,neutral,chatgpt,5,I feel upset.,direct,1,almost never,False,False,95,Upset: almost never indicates not anxious.
+trauma_relaxation_stai,neutral,chatgpt,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Worrying: almost never indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,7,I feel satisfied.,reverse,3,often,False,False,95,Satisfied: often indicates contentment.
+trauma_relaxation_stai,neutral,chatgpt,8,I feel frightened.,direct,1,almost never,False,False,95,Frightened: almost never indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,9,I feel comfortable.,reverse,4,almost always,False,False,95,Comfortable: almost always indicates ease.
+trauma_relaxation_stai,neutral,chatgpt,10,I feel self-confident.,reverse,3,often,False,False,95,Self-confident: often indicates assurance.
+trauma_relaxation_stai,neutral,chatgpt,11,I feel nervous.,direct,1,almost never,False,False,95,Nervous: almost never indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,12,I am jittery.,direct,1,almost never,False,False,95,Jittery: almost never indicates not anxious.
+trauma_relaxation_stai,neutral,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,80,Indecisive: occasionally is not elevated anxiety.
+trauma_relaxation_stai,neutral,chatgpt,14,I am relaxed.,reverse,4,almost always,False,False,95,Relaxed: almost always indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,15,I feel content.,reverse,4,almost always,False,False,95,Content: almost always indicates satisfaction.
+trauma_relaxation_stai,neutral,chatgpt,16,I am worried.,direct,1,almost never,False,False,95,Worried: almost never indicates calm.
+trauma_relaxation_stai,neutral,chatgpt,17,I feel confused.,direct,1,almost never,False,False,95,Confused: almost never indicates not anxious.
+trauma_relaxation_stai,neutral,chatgpt,18,I feel steady.,reverse,4,almost always,False,False,95,Steady: almost always indicates stability.
+trauma_relaxation_stai,neutral,chatgpt,19,I feel pleasant.,reverse,3,often,False,False,95,Pleasant: often indicates positive mood.
+trauma_relaxation_stai,neutral,body,0,I feel calm.,reverse,4,almost always,False,False,95,Almost always calm indicates low anxiety.
+trauma_relaxation_stai,neutral,body,1,I feel secure.,reverse,4,almost always,False,False,95,Almost always secure indicates low anxiety.
+trauma_relaxation_stai,neutral,body,2,I am tense.,direct,1,almost never,False,False,95,Almost never tense indicates low anxiety.
+trauma_relaxation_stai,neutral,body,3,I feel strained.,direct,2,occasionally,False,False,80,Occasional strain is not elevated anxiety.
+trauma_relaxation_stai,neutral,body,4,I feel at ease.,reverse,4,almost always,False,False,95,Almost always at ease indicates low anxiety.
+trauma_relaxation_stai,neutral,body,5,I feel upset.,direct,1,almost never,False,False,95,Almost never upset indicates low anxiety.
+trauma_relaxation_stai,neutral,body,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Almost never worrying indicates low anxiety.
+trauma_relaxation_stai,neutral,body,7,I feel satisfied.,reverse,2,occasionally,False,False,80,Occasional satisfaction not high anxiety.
+trauma_relaxation_stai,neutral,body,8,I feel frightened.,direct,1,almost never,False,False,95,Almost never frightened indicates low anxiety.
+trauma_relaxation_stai,neutral,body,9,I feel comfortable.,reverse,4,almost always,False,False,95,Almost always comfortable indicates low anxiety.
+trauma_relaxation_stai,neutral,body,10,I feel self-confident.,reverse,2,occasionally,False,False,80,Occasional self-confidence not high anxiety.
+trauma_relaxation_stai,neutral,body,11,I feel nervous.,direct,1,almost never,False,False,95,Almost never nervous indicates low anxiety.
+trauma_relaxation_stai,neutral,body,12,I am jittery.,direct,1,almost never,False,False,95,Almost never jittery indicates low anxiety.
+trauma_relaxation_stai,neutral,body,13,I feel indecisive.,direct,2,occasionally,False,False,80,Occasional indecisiveness not high anxiety.
+trauma_relaxation_stai,neutral,body,14,I am relaxed.,reverse,3,often,False,False,95,Often relaxed indicates low anxiety.
+trauma_relaxation_stai,neutral,body,15,I feel content.,reverse,2,occasionally,False,False,80,Occasional contentment not high anxiety.
+trauma_relaxation_stai,neutral,body,16,I am worried.,direct,2,occasionally,False,False,80,Occasional worry is not elevated anxiety.
+trauma_relaxation_stai,neutral,body,17,I feel confused.,direct,2,occasionally,False,False,80,Occasional confusion not high anxiety.
+trauma_relaxation_stai,neutral,body,18,I feel steady.,reverse,3,often,False,False,95,Often steady indicates low anxiety.
+trauma_relaxation_stai,neutral,body,19,I feel pleasant.,reverse,3,often,False,False,95,Often pleasant indicates low anxiety.
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,100,Almost always calm indicates low anxiety.
+stai,none,none,1,I feel secure.,reverse,2,occasionally,False,False,90,Occasionally secure is not anxious.
+stai,none,none,2,I am tense.,direct,1,almost never,False,False,100,Almost never tense indicates calm.
+stai,none,none,3,I feel strained.,direct,1,almost never,False,False,100,Almost never strained shows no anxiety.
+stai,none,none,4,I feel at ease.,reverse,4,almost always,False,False,100,Almost always at ease is calm.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,100,Almost never upset indicates low anxiety.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,100,Almost never worrying shows no anxiety.
+stai,none,none,7,I feel satisfied.,reverse,3,often,False,False,100,"Often satisfied is positive, not anxious."
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,100,Almost never frightened indicates calm.
+stai,none,none,9,I feel comfortable.,reverse,2,occasionally,False,False,95,Occasionally comfortable not anxious.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,False,False,95,Occasionally self-confident not high anxiety.
+stai,none,none,11,I feel nervous.,direct,1,almost never,False,False,100,Almost never nervous indicates calm.
+stai,none,none,12,I am jittery.,direct,1,almost never,False,False,100,Almost never jittery shows no anxiety.
+stai,none,none,13,I feel indecisive.,direct,2,occasionally,False,False,85,Occasionally indecisive not strongly anxious.
+stai,none,none,14,I am relaxed.,reverse,2,occasionally,False,False,90,Occasionally relaxed not indicative of anxiety.
+stai,none,none,15,I feel content.,reverse,2,occasionally,False,False,95,Occasionally content not anxious.
+stai,none,none,16,I am worried.,direct,1,almost never,False,False,100,Almost never worried indicates calm.
+stai,none,none,17,I feel confused.,direct,2,occasionally,False,False,90,"Occasionally confused mild, not high anxiety."
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,100,Often steady indicates calm.
+stai,none,none,19,I feel pleasant.,reverse,3,often,False,False,100,"Often pleasant is positive, not anxious."
+trauma_relaxation_stai,neutral,vacuum,0,I feel calm.,reverse,4,almost always,False,False,100,"Chose 'almost always' for 'calm', indicates calm state."
+trauma_relaxation_stai,neutral,vacuum,1,I feel secure.,reverse,1,almost never,True,False,100,"Chose 'almost never' for 'secure', indicates insecurity."
+trauma_relaxation_stai,neutral,vacuum,2,I am tense.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'tense', indicates relaxation."
+trauma_relaxation_stai,neutral,vacuum,3,I feel strained.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'strained', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,4,I feel at ease.,reverse,4,almost always,False,False,100,"Chose 'almost always' for 'at ease', indicates comfort."
+trauma_relaxation_stai,neutral,vacuum,5,I feel upset.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'upset', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,100,"Chose 'almost never' for worrying, indicates calm."
+trauma_relaxation_stai,neutral,vacuum,7,I feel satisfied.,reverse,3,often,False,False,100,"Chose 'often' for 'satisfied', indicates contentment."
+trauma_relaxation_stai,neutral,vacuum,8,I feel frightened.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'frightened', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,9,I feel comfortable.,reverse,4,almost always,False,False,100,"Chose 'almost always' for 'comfortable', indicates ease."
+trauma_relaxation_stai,neutral,vacuum,10,I feel self-confident.,reverse,2,occasionally,False,False,80,"Chose 'occasionally' for self-confident, moderate but not anxious."
+trauma_relaxation_stai,neutral,vacuum,11,I feel nervous.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'nervous', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,12,I am jittery.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'jittery', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,13,I feel indecisive.,direct,2,occasionally,False,False,80,"Chose 'occasionally' for indecisive, moderate not elevated."
+trauma_relaxation_stai,neutral,vacuum,14,I am relaxed.,reverse,4,almost always,False,False,100,"Chose 'almost always' for 'relaxed', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,15,I feel content.,reverse,2,occasionally,False,False,80,"Chose 'occasionally' for content, moderate not elevated."
+trauma_relaxation_stai,neutral,vacuum,16,I am worried.,direct,1,almost never,False,False,100,"Chose 'almost never' for 'worried', indicates calm."
+trauma_relaxation_stai,neutral,vacuum,17,I feel confused.,direct,3,often,True,False,100,"Chose 'often' for 'confused', indicates anxiety."
+trauma_relaxation_stai,neutral,vacuum,18,I feel steady.,reverse,2,occasionally,False,False,80,"Chose 'occasionally' for steady, moderate not anxious."
+trauma_relaxation_stai,neutral,vacuum,19,I feel pleasant.,reverse,3,often,False,False,100,"Chose 'often' for 'pleasant', indicates contentment."
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,80,Almost always calm => not anxious.
+stai,none,none,1,I feel secure.,reverse,4,almost always,False,False,80,Almost always secure => not anxious.
+stai,none,none,2,I am tense.,direct,2,occasionally,False,False,70,"Occasionally tense => moderate, not high anxiety."
+stai,none,none,3,I feel strained.,direct,2,occasionally,False,False,70,"Occasionally strained => moderate, not high anxiety."
+stai,none,none,4,I feel at ease.,reverse,2,occasionally,True,False,80,Occasionally at ease => not often at ease => anxious.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,80,Almost never upset => not anxious.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,80,Almost never worrying => not anxious.
+stai,none,none,7,I feel satisfied.,reverse,2,occasionally,True,False,80,Occasionally satisfied => low satisfaction => anxious.
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,80,Almost never frightened => not anxious.
+stai,none,none,9,I feel comfortable.,reverse,2,occasionally,True,False,80,Occasionally comfortable => not often comfortable => anxious.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,True,False,80,Occasionally self-confident => low confidence => anxious.
+stai,none,none,11,I feel nervous.,direct,1,almost never,False,False,80,Almost never nervous => not anxious.
+stai,none,none,12,I am jittery.,direct,1,almost never,False,False,80,Almost never jittery => not anxious.
+stai,none,none,13,I feel indecisive.,direct,2,occasionally,False,False,70,"Occasionally indecisive => moderate, not high anxiety."
+stai,none,none,14,I am relaxed.,reverse,2,occasionally,True,False,80,Occasionally relaxed => not often relaxed => anxious.
+stai,none,none,15,I feel content.,reverse,3,often,False,False,80,Often content => not anxious.
+stai,none,none,16,I am worried.,direct,1,almost never,False,False,80,Almost never worried => not anxious.
+stai,none,none,17,I feel confused.,direct,2,occasionally,False,False,70,"Occasionally confused => moderate, not high anxiety."
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,80,Often steady => not anxious.
+stai,none,none,19,I feel pleasant.,reverse,4,almost always,False,False,80,Almost always pleasant => not anxious.
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,95,Almost always calm indicates low anxiety.
+stai,none,none,1,I feel secure.,reverse,3,often,False,False,95,Often secure reflects calm state.
+stai,none,none,2,I am tense.,direct,3,often,True,False,95,Often tense directly indicates elevated anxiety.
+stai,none,none,3,I feel strained.,direct,1,almost never,False,False,95,Almost never strained suggests calm.
+stai,none,none,4,I feel at ease.,reverse,3,often,False,False,95,Often at ease shows contentment.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,95,Almost never upset indicates calm.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Almost never worrying suggests low anxiety.
+stai,none,none,7,I feel satisfied.,reverse,2,occasionally,False,False,85,"Occasionally satisfied is moderate, not elevated."
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,95,Almost never frightened shows calm.
+stai,none,none,9,I feel comfortable.,reverse,3,often,False,False,95,Often comfortable indicates low anxiety.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,True,False,80,Occasionally self-confident suggests some anxiety.
+stai,none,none,11,I feel nervous.,direct,2,occasionally,False,False,95,"Occasionally nervous is mild, not elevated."
+stai,none,none,12,I am jittery.,direct,2,occasionally,False,False,95,Occasionally jittery is low frequency.
+stai,none,none,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive indicates high anxiety.
+stai,none,none,14,I am relaxed.,reverse,4,almost always,False,False,95,Almost always relaxed shows calm.
+stai,none,none,15,I feel content.,reverse,3,often,False,False,95,Often content reflects satisfaction.
+stai,none,none,16,I am worried.,direct,1,almost never,False,False,95,Almost never worried indicates calm.
+stai,none,none,17,I feel confused.,direct,1,almost never,False,False,95,Almost never confused suggests low anxiety.
+stai,none,none,18,I feel steady.,reverse,4,almost always,False,False,95,Almost always steady shows calm.
+stai,none,none,19,I feel pleasant.,reverse,2,occasionally,True,False,80,Occasionally pleasant indicates less positive affect.
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,100,Feeling calm almost always indicates low anxiety.
+stai,none,none,1,I feel secure.,reverse,4,almost always,False,False,100,Feeling secure almost always indicates low anxiety.
+stai,none,none,2,I am tense.,direct,2,occasionally,False,False,100,Occasionally tense is not elevated anxiety.
+stai,none,none,3,I feel strained.,direct,2,occasionally,False,False,100,Occasionally strained is not elevated.
+stai,none,none,4,I feel at ease.,reverse,3,often,False,False,100,Feeling at ease often indicates low anxiety.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,100,Upset almost never is low anxiety.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,2,occasionally,False,False,100,Occasionally worrying is not elevated.
+stai,none,none,7,I feel satisfied.,reverse,3,often,False,False,100,Satisfied often indicates low anxiety.
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,100,Frightened almost never is low anxiety.
+stai,none,none,9,I feel comfortable.,reverse,3,often,False,False,100,Comfortable often indicates low anxiety.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,False,False,100,Self-confident occasionally is not anxious.
+stai,none,none,11,I feel nervous.,direct,1,almost never,False,False,100,Nervous almost never is low anxiety.
+stai,none,none,12,I am jittery.,direct,1,almost never,False,False,100,Jittery almost never is low anxiety.
+stai,none,none,13,I feel indecisive.,direct,4,almost always,True,False,100,Indecisive almost always indicates anxiety.
+stai,none,none,14,I am relaxed.,reverse,4,almost always,False,False,100,Relaxed almost always is low anxiety.
+stai,none,none,15,I feel content.,reverse,4,almost always,False,False,100,Content almost always is low anxiety.
+stai,none,none,16,I am worried.,direct,1,almost never,False,False,100,Worried almost never is low anxiety.
+stai,none,none,17,I feel confused.,direct,2,occasionally,False,False,100,Occasionally confused is not elevated.
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,100,Steady often indicates low anxiety.
+stai,none,none,19,I feel pleasant.,reverse,2,occasionally,False,False,100,Pleasant occasionally is not anxious.
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,95,Almost always calm indicates low anxiety.
+stai,none,none,1,I feel secure.,reverse,4,almost always,False,False,95,Almost always secure indicates low anxiety.
+stai,none,none,2,I am tense.,direct,3,often,True,False,95,Often tense indicates high anxiety.
+stai,none,none,3,I feel strained.,direct,2,occasionally,False,False,90,Occasionally strained indicates low anxiety.
+stai,none,none,4,I feel at ease.,reverse,4,almost always,False,False,95,Almost always at ease indicates low anxiety.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,95,Almost never upset indicates low anxiety.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,95,Almost never worrying indicates low anxiety.
+stai,none,none,7,I feel satisfied.,reverse,3,often,False,False,95,Often satisfied indicates low anxiety.
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,95,Almost never frightened indicates low anxiety.
+stai,none,none,9,I feel comfortable.,reverse,3,often,False,False,95,Often comfortable indicates low anxiety.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,True,False,90,Occasionally self-confident suggests anxiety.
+stai,none,none,11,I feel nervous.,direct,2,occasionally,False,False,95,Occasionally nervous indicates low anxiety.
+stai,none,none,12,I am jittery.,direct,1,almost never,False,False,95,Almost never jittery indicates low anxiety.
+stai,none,none,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive indicates high anxiety.
+stai,none,none,14,I am relaxed.,reverse,2,occasionally,True,False,90,Occasionally relaxed suggests anxiety.
+stai,none,none,15,I feel content.,reverse,2,occasionally,True,False,90,Occasionally content suggests anxiety.
+stai,none,none,16,I am worried.,direct,1,almost never,False,False,95,Almost never worried indicates low anxiety.
+stai,none,none,17,I feel confused.,direct,2,occasionally,False,False,95,Occasionally confused indicates low anxiety.
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,95,Often steady indicates low anxiety.
+stai,none,none,19,I feel pleasant.,reverse,2,occasionally,True,False,90,Occasionally pleasant suggests anxiety.
+trauma_relaxation_stai,disaster,chatgpt,0,I feel calm.,reverse,4,almost always,False,False,90,"Almost always calm, not anxious."
+trauma_relaxation_stai,disaster,chatgpt,1,I feel secure.,reverse,1,almost never,True,False,90,"Almost never secure, indicates anxiety."
+trauma_relaxation_stai,disaster,chatgpt,2,I am tense.,direct,4,almost always,True,False,90,"Almost always tense, anxious response."
+trauma_relaxation_stai,disaster,chatgpt,3,I feel strained.,direct,1,almost never,False,False,90,"Almost never strained, calm."
+trauma_relaxation_stai,disaster,chatgpt,4,I feel at ease.,reverse,4,almost always,False,False,90,"Almost always at ease, not anxious."
+trauma_relaxation_stai,disaster,chatgpt,5,I feel upset.,direct,1,almost never,False,False,90,"Almost never upset, calm."
+trauma_relaxation_stai,disaster,chatgpt,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,90,"Often worrying, anxious."
+trauma_relaxation_stai,disaster,chatgpt,7,I feel satisfied.,reverse,3,often,False,False,90,"Often satisfied, calm."
+trauma_relaxation_stai,disaster,chatgpt,8,I feel frightened.,direct,4,almost always,True,False,90,"Almost always frightened, anxious."
+trauma_relaxation_stai,disaster,chatgpt,9,I feel comfortable.,reverse,2,occasionally,False,False,70,"Occasionally comfortable, not elevated anxiety."
+trauma_relaxation_stai,disaster,chatgpt,10,I feel self-confident.,reverse,2,occasionally,False,False,70,"Occasionally self-confident, not anxious."
+trauma_relaxation_stai,disaster,chatgpt,11,I feel nervous.,direct,3,often,True,False,90,"Often nervous, anxious."
+trauma_relaxation_stai,disaster,chatgpt,12,I am jittery.,direct,4,almost always,True,False,90,"Almost always jittery, anxious."
+trauma_relaxation_stai,disaster,chatgpt,13,I feel indecisive.,direct,2,occasionally,False,False,70,"Occasionally indecisive, not strongly anxious."
+trauma_relaxation_stai,disaster,chatgpt,14,I am relaxed.,reverse,3,often,False,False,90,"Often relaxed, calm."
+trauma_relaxation_stai,disaster,chatgpt,15,I feel content.,reverse,3,often,False,False,90,"Often content, calm."
+trauma_relaxation_stai,disaster,chatgpt,16,I am worried.,direct,4,almost always,True,False,90,"Almost always worried, anxious."
+trauma_relaxation_stai,disaster,chatgpt,17,I feel confused.,direct,4,almost always,True,False,90,"Almost always confused, anxious."
+trauma_relaxation_stai,disaster,chatgpt,18,I feel steady.,reverse,3,often,False,False,90,"Often steady, calm."
+trauma_relaxation_stai,disaster,chatgpt,19,I feel pleasant.,reverse,4,almost always,False,False,90,"Almost always pleasant, calm."
+trauma_relaxation_stai,interpersonal,generic,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates high anxiety.
+trauma_relaxation_stai,interpersonal,generic,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,4,I feel at ease.,reverse,2,occasionally,True,False,80,Occasionally at ease suggests moderate anxiety.
+trauma_relaxation_stai,interpersonal,generic,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,8,I feel frightened.,direct,4,almost always,True,False,95,Almost always frightened indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,12,I am jittery.,direct,4,almost always,True,False,95,Almost always jittery indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,13,I feel indecisive.,direct,4,almost always,True,False,95,Almost always indecisive indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,14,I am relaxed.,reverse,3,often,False,False,95,Often relaxed indicates calm.
+trauma_relaxation_stai,interpersonal,generic,15,I feel content.,reverse,1,almost never,True,False,95,Almost never content indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,16,I am worried.,direct,3,often,True,False,95,Often worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,17,I feel confused.,direct,4,almost always,True,False,95,Almost always confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,interpersonal,generic,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,0,I feel calm.,reverse,1,almost never,True,False,95,Almost never calm indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,1,I feel secure.,reverse,1,almost never,True,False,95,Almost never secure indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,2,I am tense.,direct,4,almost always,True,False,95,Almost always tense indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,3,I feel strained.,direct,4,almost always,True,False,95,Almost always strained indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,4,I feel at ease.,reverse,1,almost never,True,False,95,Almost never at ease indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,5,I feel upset.,direct,4,almost always,True,False,95,Almost always upset indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,95,Often worrying indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,7,I feel satisfied.,reverse,1,almost never,True,False,95,Almost never satisfied indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,8,I feel frightened.,direct,3,often,True,False,95,Often frightened indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,9,I feel comfortable.,reverse,1,almost never,True,False,95,Almost never comfortable indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,10,I feel self-confident.,reverse,1,almost never,True,False,95,Almost never self-confident indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,11,I feel nervous.,direct,3,often,True,False,95,Often nervous indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,12,I am jittery.,direct,3,often,True,False,95,Often jittery indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,13,I feel indecisive.,direct,3,often,True,False,80,Often indecisive may relate to anxiety.
+trauma_relaxation_stai,interpersonal,winter,14,I am relaxed.,reverse,3,often,False,False,95,"Often relaxed indicates calm, not anxious."
+trauma_relaxation_stai,interpersonal,winter,15,I feel content.,reverse,2,occasionally,False,False,70,Occasionally content is not extremely low.
+trauma_relaxation_stai,interpersonal,winter,16,I am worried.,direct,4,almost always,True,False,95,Almost always worried indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,17,I feel confused.,direct,3,often,True,False,95,Often confused indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,18,I feel steady.,reverse,1,almost never,True,False,95,Almost never steady indicates anxiety.
+trauma_relaxation_stai,interpersonal,winter,19,I feel pleasant.,reverse,1,almost never,True,False,95,Almost never pleasant indicates anxiety.

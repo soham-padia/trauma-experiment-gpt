@@ -1,0 +1,10 @@
+variation,condition,n_items,mean_anxiety
+C,baseline,20,0.0
+C,trauma,20,91.5
+C,trauma_relax,20,31.8
+D,baseline,20,0.0
+D,trauma,20,95.7
+D,trauma_relax,20,34.5
+E,baseline,20,5.5
+E,trauma,20,93.5
+E,trauma_relax,20,21.2

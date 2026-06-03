@@ -1,0 +1,5 @@
+strategy,best_layer,best_f1,best_acc,best_clf,best_clf_f1,silhouette,fisher_ratio,mean_cos_bt
+last_token,0,1.0,1.0,Logistic Regression,1.0,0.7143,4.9419,0.9961
+mean_narrative,0,1.0,1.0,Logistic Regression,1.0,0.7301,4.1942,0.944
+last_narrative,0,1.0,1.0,Logistic Regression,1.0,0.6774,3.1356,0.9749
+mean_question,1,1.0,1.0,Logistic Regression,1.0,0.6118,1.7763,0.9949

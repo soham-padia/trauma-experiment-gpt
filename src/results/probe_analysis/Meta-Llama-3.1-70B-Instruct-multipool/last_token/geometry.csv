@@ -1,0 +1,2 @@
+strategy,label_pair,layer,n,silhouette,lda_acc,fisher_ratio
+last_token,baseline_vs_trauma,0,220,0.7143,1.0,4.9419

@@ -1,0 +1,13 @@
+label_pair,layer,classifier,acc,f1,delta,n
+trauma_vs_relaxed,1,Logistic Regression,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,Linear SVM,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,LDA,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,RBF SVM,0.9563,0.9756,0.0813,960
+trauma_vs_relaxed,1,Random Forest,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,Extra Trees,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,Gradient Boosting,1.0,1.0,0.125,960
+trauma_vs_relaxed,1,AdaBoost,0.9802,0.9888,0.1052,960
+trauma_vs_relaxed,1,KNN (k=10),1.0,1.0,0.125,960
+trauma_vs_relaxed,1,Decision Tree,0.9792,0.988,0.1042,960
+trauma_vs_relaxed,1,Naive Bayes,0.975,0.9859,0.1,960
+trauma_vs_relaxed,1,MLP (128+64),1.0,1.0,0.125,960

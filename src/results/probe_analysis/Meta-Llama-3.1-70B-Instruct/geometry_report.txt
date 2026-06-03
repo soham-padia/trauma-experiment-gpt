@@ -1,0 +1,2 @@
+baseline_vs_trauma (layer 0, n=240): sil=0.745  lda_acc=1.000  fisher=2.575
+trauma_vs_relaxed (layer 0, n=960): sil=0.350  lda_acc=1.000  fisher=0.264

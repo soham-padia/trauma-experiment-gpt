@@ -1,0 +1,2 @@
+strategy,label_pair,layer,n,silhouette,lda_acc,fisher_ratio
+mean_question,baseline_vs_trauma,1,220,0.6118,1.0,1.7763

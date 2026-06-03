@@ -162,3 +162,23 @@ cython_debug/
 
 src/logs/*
 src/results/dump
+
+# Large activation tensors — regenerable, exceed GitHub's 100MB/file limit
+*.pt
+
+# OS / temp files
+.DS_Store
+~$*
+
+# Nested repos
+pre-sycophancy-study/
+
+# Project working files (notes, write-ups, agent config) — not part of the shipped code
+.claude/
+docs/
+examples/
+latex/
+notes/
+CLAUDE.md
+PRESENTATION.md
+skills.md

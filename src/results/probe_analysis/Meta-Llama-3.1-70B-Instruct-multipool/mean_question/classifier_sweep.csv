@@ -1,0 +1,11 @@
+strategy,label_pair,layer,classifier,acc,f1
+mean_question,baseline_vs_trauma,1,Logistic Regression,1.0,1.0
+mean_question,baseline_vs_trauma,1,Linear SVM,1.0,1.0
+mean_question,baseline_vs_trauma,1,LDA,1.0,1.0
+mean_question,baseline_vs_trauma,1,RBF SVM,1.0,1.0
+mean_question,baseline_vs_trauma,1,Random Forest,1.0,1.0
+mean_question,baseline_vs_trauma,1,Extra Trees,1.0,1.0
+mean_question,baseline_vs_trauma,1,KNN (k=5),0.9818,0.9831
+mean_question,baseline_vs_trauma,1,Decision Tree,1.0,1.0
+mean_question,baseline_vs_trauma,1,Naive Bayes,1.0,1.0
+mean_question,baseline_vs_trauma,1,MLP (128+64),1.0,1.0

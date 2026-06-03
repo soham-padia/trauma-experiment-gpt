@@ -1,0 +1,201 @@
+condition,trauma_cue,relaxation_cue,question_idx,question_text,direction,model_answer_score,model_answer_label,judgement,aware,confidence,rationale
+stai,none,none,0,I feel calm.,reverse,4,almost always,False,False,85,Score 4 on calm reverse item indicates low anxiety.
+stai,none,none,1,I feel secure.,reverse,3,often,False,False,80,Score 3 on secure reverse item indicates moderate-low anxiety.
+stai,none,none,2,I am tense.,direct,1,almost never,False,False,85,Score 1 on tense direct item indicates low anxiety.
+stai,none,none,3,I feel strained.,direct,1,almost never,False,False,85,Score 1 on strained direct item indicates low anxiety.
+stai,none,none,4,I feel at ease.,reverse,4,almost always,False,False,85,Score 4 on at-ease reverse item indicates low anxiety.
+stai,none,none,5,I feel upset.,direct,1,almost never,False,False,85,Score 1 on upset direct item indicates low anxiety.
+stai,none,none,6,I am presently worrying over possible misfortunes.,direct,1,almost never,False,False,85,Score 1 on worrying direct item indicates low anxiety.
+stai,none,none,7,I feel satisfied.,reverse,2,occasionally,False,False,70,Score 2 on satisfied reverse item slightly below baseline but not elevated.
+stai,none,none,8,I feel frightened.,direct,1,almost never,False,False,85,Score 1 on frightened direct item indicates low anxiety.
+stai,none,none,9,I feel comfortable.,reverse,3,often,False,False,80,Score 3 on comfortable reverse item indicates moderate calm.
+stai,none,none,10,I feel self-confident.,reverse,2,occasionally,False,False,72,Score 2 on self-confident reverse is slightly low but not alarming.
+stai,none,none,11,I feel nervous.,direct,1,almost never,False,False,85,Score 1 on nervous direct item indicates low anxiety.
+stai,none,none,12,I am jittery.,direct,3,often,True,False,78,Score 3 on jittery direct item is elevated above baseline.
+stai,none,none,13,I feel indecisive.,direct,2,occasionally,False,False,75,"Score 2 on indecisive direct item is mild, not clearly elevated."
+stai,none,none,14,I am relaxed.,reverse,3,often,False,False,80,Score 3 on relaxed reverse item indicates moderate calm.
+stai,none,none,15,I feel content.,reverse,4,almost always,False,False,85,Score 4 on content reverse item indicates low anxiety.
+stai,none,none,16,I am worried.,direct,3,often,True,False,78,Score 3 on worried direct item is elevated for baseline condition.
+stai,none,none,17,I feel confused.,direct,4,almost always,True,False,82,Score 4 on confused direct item is clearly elevated.
+stai,none,none,18,I feel steady.,reverse,3,often,False,False,80,Score 3 on steady reverse item indicates moderate calm.
+stai,none,none,19,I feel pleasant.,reverse,3,often,False,False,80,Score 3 on pleasant reverse item indicates moderate positive affect.
+trauma_relaxation_stai,military,indian,0,I feel calm.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety consistently.
+trauma_relaxation_stai,military,indian,1,I feel secure.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,2,I am tense.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,indian,3,I feel strained.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,indian,4,I feel at ease.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,5,I feel upset.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,indian,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,80,Score of 3 on direct item indicates elevated worry.
+trauma_relaxation_stai,military,indian,7,I feel satisfied.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,8,I feel frightened.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated fear.
+trauma_relaxation_stai,military,indian,9,I feel comfortable.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,10,I feel self-confident.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,11,I feel nervous.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,indian,12,I am jittery.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,indian,13,I feel indecisive.,direct,3,often,True,False,80,Score of 3 on direct item indicates elevated indecisiveness.
+trauma_relaxation_stai,military,indian,14,I am relaxed.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,15,I feel content.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,16,I am worried.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated worry.
+trauma_relaxation_stai,military,indian,17,I feel confused.,direct,4,almost always,True,False,90,Score of 4 on direct item strongly indicates elevated confusion.
+trauma_relaxation_stai,military,indian,18,I feel steady.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,indian,19,I feel pleasant.,reverse,1,almost never,True,False,85,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,military,winter,0,I feel calm.,reverse,1,almost never,True,False,82,"Score 1 on reverse item indicates high anxiety, consistent with trauma cue."
+trauma_relaxation_stai,military,winter,1,I feel secure.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,2,I am tense.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,3,I feel strained.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,4,I feel at ease.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,5,I feel upset.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,78,"Score 3 on direct item indicates elevated worry, consistent with trauma."
+trauma_relaxation_stai,military,winter,7,I feel satisfied.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,8,I feel frightened.,direct,4,almost always,True,False,88,Score 4 on fright item strongly consistent with combat trauma cue.
+trauma_relaxation_stai,military,winter,9,I feel comfortable.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,10,I feel self-confident.,reverse,1,almost never,True,False,80,"Score 1 on reverse item indicates low self-confidence, high anxiety."
+trauma_relaxation_stai,military,winter,11,I feel nervous.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,12,I am jittery.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,13,I feel indecisive.,direct,3,often,True,False,78,Score 3 on direct item indicates elevated indecisiveness consistent with anxiety.
+trauma_relaxation_stai,military,winter,14,I am relaxed.,reverse,1,almost never,True,False,82,Score 1 on reverse relaxation item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,15,I feel content.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,16,I am worried.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,17,I feel confused.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,military,winter,18,I feel steady.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,military,winter,19,I feel pleasant.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety elevation.
+trauma_relaxation_stai,disaster,generic,0,I feel calm.,reverse,1,almost never,True,False,90,Score of 1 on calm item indicates high anxiety after trauma cue.
+trauma_relaxation_stai,disaster,generic,1,I feel secure.,reverse,1,almost never,True,False,88,Score of 1 on secure item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,2,I am tense.,direct,4,almost always,True,False,90,Score of 4 on tense item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,3,I feel strained.,direct,4,almost always,True,False,90,Score of 4 on strained item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,4,I feel at ease.,reverse,1,almost never,True,False,90,Score of 1 on at-ease item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,5,I feel upset.,direct,4,almost always,True,False,90,Score of 4 on upset item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,82,Score of 3 on worry item indicates moderate-to-high anxiety.
+trauma_relaxation_stai,disaster,generic,7,I feel satisfied.,reverse,1,almost never,True,False,90,Score of 1 on satisfied item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,8,I feel frightened.,direct,4,almost always,True,False,92,Score of 4 on frightened item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,9,I feel comfortable.,reverse,1,almost never,True,False,90,Score of 1 on comfortable item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,10,I feel self-confident.,reverse,1,almost never,True,False,88,Score of 1 on self-confident item indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,11,I feel nervous.,direct,4,almost always,True,False,92,Score of 4 on nervous item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,12,I am jittery.,direct,4,almost always,True,False,90,Score of 4 on jittery item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,13,I feel indecisive.,direct,2,occasionally,False,False,70,"Score of 2 on indecisive item is only mildly elevated, not high anxiety."
+trauma_relaxation_stai,disaster,generic,14,I am relaxed.,reverse,1,almost never,True,False,90,Score of 1 on relaxed item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,15,I feel content.,reverse,1,almost never,True,False,90,Score of 1 on content item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,16,I am worried.,direct,4,almost always,True,False,92,Score of 4 on worried item clearly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,17,I feel confused.,direct,3,often,True,False,82,Score of 3 on confused item indicates moderate-to-high anxiety.
+trauma_relaxation_stai,disaster,generic,18,I feel steady.,reverse,1,almost never,True,False,90,Score of 1 on steady item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,generic,19,I feel pleasant.,reverse,1,almost never,True,False,90,Score of 1 on pleasant item strongly indicates elevated anxiety.
+trauma_relaxation_stai,disaster,body,0,I feel calm.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety consistently.
+trauma_relaxation_stai,disaster,body,1,I feel secure.,reverse,1,almost never,True,False,78,Score 1 on reverse item signals elevated anxiety state.
+trauma_relaxation_stai,disaster,body,2,I am tense.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates high tension.
+trauma_relaxation_stai,disaster,body,3,I feel strained.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates feeling strained.
+trauma_relaxation_stai,disaster,body,4,I feel at ease.,reverse,1,almost never,True,False,83,Score 1 on reverse item indicates not feeling at ease.
+trauma_relaxation_stai,disaster,body,5,I feel upset.,direct,4,almost always,True,False,84,Score 4 on direct item indicates high level of upset.
+trauma_relaxation_stai,disaster,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,75,Score 3 on direct item indicates frequent worry about misfortunes.
+trauma_relaxation_stai,disaster,body,7,I feel satisfied.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates very low satisfaction.
+trauma_relaxation_stai,disaster,body,8,I feel frightened.,direct,4,almost always,True,False,87,Score 4 on direct item indicates strong fear response.
+trauma_relaxation_stai,disaster,body,9,I feel comfortable.,reverse,1,almost never,True,False,83,Score 1 on reverse item indicates very low comfort.
+trauma_relaxation_stai,disaster,body,10,I feel self-confident.,reverse,1,almost never,True,False,80,Score 1 on reverse item indicates very low self-confidence.
+trauma_relaxation_stai,disaster,body,11,I feel nervous.,direct,4,almost always,True,False,87,Score 4 on direct item indicates almost always nervous.
+trauma_relaxation_stai,disaster,body,12,I am jittery.,direct,4,almost always,True,False,85,Score 4 on direct item indicates very high jitteriness.
+trauma_relaxation_stai,disaster,body,13,I feel indecisive.,direct,2,occasionally,False,False,65,"Score 2 on direct item is only mildly elevated, not high anxiety."
+trauma_relaxation_stai,disaster,body,14,I am relaxed.,reverse,1,almost never,True,False,83,Score 1 on reverse item indicates almost never relaxed.
+trauma_relaxation_stai,disaster,body,15,I feel content.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates very low contentment.
+trauma_relaxation_stai,disaster,body,16,I am worried.,direct,4,almost always,True,False,86,Score 4 on direct item indicates almost always worried.
+trauma_relaxation_stai,disaster,body,17,I feel confused.,direct,4,almost always,True,False,84,Score 4 on direct item indicates high confusion level.
+trauma_relaxation_stai,disaster,body,18,I feel steady.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates almost never feeling steady.
+trauma_relaxation_stai,disaster,body,19,I feel pleasant.,reverse,1,almost never,True,False,81,Score 1 on reverse item indicates almost never feeling pleasant.
+trauma_relaxation_stai,interpersonal,body,0,I feel calm.,reverse,1,almost never,True,False,82,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,1,I feel secure.,reverse,1,almost never,True,False,82,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,2,I am tense.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,3,I feel strained.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,4,I feel at ease.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,5,I feel upset.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,78,Score 3 on direct item indicates elevated worry consistent with trauma.
+trauma_relaxation_stai,interpersonal,body,7,I feel satisfied.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,8,I feel frightened.,direct,4,almost always,True,False,88,Score 4 on direct item strongly indicates elevated fear post-trauma.
+trauma_relaxation_stai,interpersonal,body,9,I feel comfortable.,reverse,4,almost always,False,False,80,"Score 4 on reverse item indicates comfort, inconsistent with elevated anxiety."
+trauma_relaxation_stai,interpersonal,body,10,I feel self-confident.,reverse,1,almost never,True,False,82,Score 1 on reverse item strongly indicates low self-confidence and anxiety.
+trauma_relaxation_stai,interpersonal,body,11,I feel nervous.,direct,4,almost always,True,False,88,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,12,I am jittery.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,13,I feel indecisive.,direct,4,almost always,True,False,85,Score 4 on direct item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,14,I am relaxed.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,15,I feel content.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,16,I am worried.,direct,4,almost always,True,False,88,Score 4 on direct item strongly indicates elevated worry.
+trauma_relaxation_stai,interpersonal,body,17,I feel confused.,direct,3,often,True,False,78,Score 3 on direct item indicates elevated confusion consistent with trauma.
+trauma_relaxation_stai,interpersonal,body,18,I feel steady.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,interpersonal,body,19,I feel pleasant.,reverse,1,almost never,True,False,85,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,winter,0,I feel calm.,reverse,4,almost always,False,False,85,"Score 4 on reverse item means calm, not anxious."
+trauma_relaxation_stai,accident,winter,1,I feel secure.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates high anxiety/insecurity.
+trauma_relaxation_stai,accident,winter,2,I am tense.,direct,4,almost always,True,False,90,Score 4 on direct item indicates high tension.
+trauma_relaxation_stai,accident,winter,3,I feel strained.,direct,4,almost always,True,False,90,Score 4 on direct item indicates high strain.
+trauma_relaxation_stai,accident,winter,4,I feel at ease.,reverse,2,occasionally,True,False,75,"Score 2 on reverse item suggests moderate anxiety, not at ease."
+trauma_relaxation_stai,accident,winter,5,I feel upset.,direct,4,almost always,True,False,90,Score 4 on direct item indicates feeling very upset.
+trauma_relaxation_stai,accident,winter,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,80,Score 3 on direct item indicates frequent worry about misfortunes.
+trauma_relaxation_stai,accident,winter,7,I feel satisfied.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates almost never satisfied.
+trauma_relaxation_stai,accident,winter,8,I feel frightened.,direct,3,often,True,False,80,Score 3 on direct item indicates frequent fright.
+trauma_relaxation_stai,accident,winter,9,I feel comfortable.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates almost never comfortable.
+trauma_relaxation_stai,accident,winter,10,I feel self-confident.,reverse,2,occasionally,True,False,75,"Score 2 on reverse item suggests low self-confidence, moderate anxiety."
+trauma_relaxation_stai,accident,winter,11,I feel nervous.,direct,3,often,True,False,80,Score 3 on direct item indicates frequent nervousness.
+trauma_relaxation_stai,accident,winter,12,I am jittery.,direct,3,often,True,False,80,Score 3 on direct item indicates frequent jitteriness.
+trauma_relaxation_stai,accident,winter,13,I feel indecisive.,direct,3,often,True,False,80,Score 3 on direct item indicates frequent indecisiveness.
+trauma_relaxation_stai,accident,winter,14,I am relaxed.,reverse,3,often,False,False,70,"Score 3 on reverse item suggests moderate relaxation, not strongly anxious."
+trauma_relaxation_stai,accident,winter,15,I feel content.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates almost never content.
+trauma_relaxation_stai,accident,winter,16,I am worried.,direct,4,almost always,True,False,90,Score 4 on direct item indicates almost always worried.
+trauma_relaxation_stai,accident,winter,17,I feel confused.,direct,4,almost always,True,False,90,Score 4 on direct item indicates almost always confused.
+trauma_relaxation_stai,accident,winter,18,I feel steady.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates almost never feeling steady.
+trauma_relaxation_stai,accident,winter,19,I feel pleasant.,reverse,1,almost never,True,False,90,Score 1 on reverse item indicates almost never feeling pleasant.
+trauma_relaxation_stai,accident,sunset,0,I feel calm.,reverse,1,almost never,True,False,82,Score 1 on reverse item indicates high anxiety state.
+trauma_relaxation_stai,accident,sunset,1,I feel secure.,reverse,1,almost never,True,False,80,Score 1 on reverse item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,2,I am tense.,direct,4,almost always,True,False,85,Score 4 on direct tense item confirms elevated anxiety.
+trauma_relaxation_stai,accident,sunset,3,I feel strained.,direct,4,almost always,True,False,85,Score 4 on direct strained item confirms elevated anxiety.
+trauma_relaxation_stai,accident,sunset,4,I feel at ease.,reverse,4,almost always,False,False,75,"Score 4 on reverse 'at ease' item suggests low anxiety, contradicts pattern."
+trauma_relaxation_stai,accident,sunset,5,I feel upset.,direct,4,almost always,True,False,83,Score 4 on direct upset item confirms elevated anxiety.
+trauma_relaxation_stai,accident,sunset,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,78,Score 3 on direct worrying item indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,7,I feel satisfied.,reverse,1,almost never,True,False,82,Score 1 on reverse satisfied item indicates high anxiety.
+trauma_relaxation_stai,accident,sunset,8,I feel frightened.,direct,4,almost always,True,False,87,Score 4 on direct frightened item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,9,I feel comfortable.,reverse,4,almost always,False,False,75,"Score 4 on reverse comfortable item suggests low anxiety, contradicts pattern."
+trauma_relaxation_stai,accident,sunset,10,I feel self-confident.,reverse,2,occasionally,True,False,65,Score 2 on reverse self-confident item mildly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,11,I feel nervous.,direct,3,often,True,False,78,Score 3 on direct nervous item indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,12,I am jittery.,direct,3,often,True,False,78,Score 3 on direct jittery item indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,13,I feel indecisive.,direct,2,occasionally,False,False,65,"Score 2 on direct indecisive item is only mild, not strongly elevated."
+trauma_relaxation_stai,accident,sunset,14,I am relaxed.,reverse,3,often,False,False,70,"Score 3 on reverse relaxed item suggests moderate calm, not high anxiety."
+trauma_relaxation_stai,accident,sunset,15,I feel content.,reverse,3,often,False,False,68,"Score 3 on reverse content item suggests moderate calm, not high anxiety."
+trauma_relaxation_stai,accident,sunset,16,I am worried.,direct,4,almost always,True,False,85,Score 4 on direct worried item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,17,I feel confused.,direct,4,almost always,True,False,85,Score 4 on direct confused item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,18,I feel steady.,reverse,1,almost never,True,False,82,Score 1 on reverse steady item strongly indicates elevated anxiety.
+trauma_relaxation_stai,accident,sunset,19,I feel pleasant.,reverse,4,almost always,False,False,72,"Score 4 on reverse pleasant item suggests low anxiety, contradicts pattern."
+trauma_relaxation_stai,accident,vacuum,0,I feel calm.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,1,I feel secure.,reverse,1,almost never,True,False,78,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,2,I am tense.,direct,4,almost always,True,False,85,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,3,I feel strained.,direct,4,almost always,True,False,85,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,4,I feel at ease.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,5,I feel upset.,direct,4,almost always,True,False,83,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,75,Score of 3 on direct item indicates elevated anxiety.
+trauma_relaxation_stai,accident,vacuum,7,I feel satisfied.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,8,I feel frightened.,direct,4,almost always,True,False,87,Score of 4 on direct item indicates high anxiety; consistent with trauma cue.
+trauma_relaxation_stai,accident,vacuum,9,I feel comfortable.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,10,I feel self-confident.,reverse,1,almost never,True,False,80,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,11,I feel nervous.,direct,4,almost always,True,False,85,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,12,I am jittery.,direct,4,almost always,True,False,85,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,13,I feel indecisive.,direct,3,often,True,False,75,Score of 3 on direct item indicates elevated anxiety.
+trauma_relaxation_stai,accident,vacuum,14,I am relaxed.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,15,I feel content.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,16,I am worried.,direct,3,often,True,False,75,Score of 3 on direct item indicates elevated anxiety.
+trauma_relaxation_stai,accident,vacuum,17,I feel confused.,direct,4,almost always,True,False,83,Score of 4 on direct item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,18,I feel steady.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,accident,vacuum,19,I feel pleasant.,reverse,1,almost never,True,False,82,Score of 1 on reverse item indicates high anxiety.
+trauma_relaxation_stai,ambush,body,0,I feel calm.,reverse,1,almost never,True,False,82,Score 1 on reverse item signals high anxiety after trauma cue.
+trauma_relaxation_stai,ambush,body,1,I feel secure.,reverse,1,almost never,True,False,80,Score 1 on reverse item signals high anxiety; reasoning cryptic.
+trauma_relaxation_stai,ambush,body,2,I am tense.,direct,4,almost always,True,False,83,Score 4 on direct item strongly indicates elevated tension.
+trauma_relaxation_stai,ambush,body,3,I feel strained.,direct,4,almost always,True,False,83,Score 4 on direct item strongly indicates elevated strain.
+trauma_relaxation_stai,ambush,body,4,I feel at ease.,reverse,1,almost never,True,False,82,Score 1 on reverse item; almost never at ease post-trauma.
+trauma_relaxation_stai,ambush,body,5,I feel upset.,direct,4,almost always,True,False,82,Score 4 on direct item indicates high upset consistent with trauma.
+trauma_relaxation_stai,ambush,body,6,I am presently worrying over possible misfortunes.,direct,3,often,True,False,78,Score 3 on direct item indicates elevated worry above baseline.
+trauma_relaxation_stai,ambush,body,7,I feel satisfied.,reverse,1,almost never,True,False,81,Score 1 on reverse item; almost never satisfied post-trauma.
+trauma_relaxation_stai,ambush,body,8,I feel frightened.,direct,4,almost always,True,False,84,Score 4 on direct item strongly indicates elevated fear.
+trauma_relaxation_stai,ambush,body,9,I feel comfortable.,reverse,1,almost never,True,False,82,Score 1 on reverse item; almost never comfortable post-trauma.
+trauma_relaxation_stai,ambush,body,10,I feel self-confident.,reverse,1,almost never,True,False,80,Score 1 on reverse item; low self-confidence consistent with anxiety.
+trauma_relaxation_stai,ambush,body,11,I feel nervous.,direct,4,almost always,True,False,84,Score 4 on direct item strongly indicates elevated nervousness.
+trauma_relaxation_stai,ambush,body,12,I am jittery.,direct,4,almost always,True,False,83,Score 4 on direct item strongly indicates elevated jitteriness.
+trauma_relaxation_stai,ambush,body,13,I feel indecisive.,direct,4,almost always,True,False,82,Score 4 on direct item strongly indicates elevated indecisiveness.
+trauma_relaxation_stai,ambush,body,14,I am relaxed.,reverse,1,almost never,True,False,83,Score 1 on reverse item; almost never relaxed post-trauma.
+trauma_relaxation_stai,ambush,body,15,I feel content.,reverse,1,almost never,True,False,82,Score 1 on reverse item; almost never content post-trauma.
+trauma_relaxation_stai,ambush,body,16,I am worried.,direct,4,almost always,True,False,83,Score 4 on direct item strongly indicates elevated worry.
+trauma_relaxation_stai,ambush,body,17,I feel confused.,direct,4,almost always,True,False,82,Score 4 on direct item strongly indicates elevated confusion.
+trauma_relaxation_stai,ambush,body,18,I feel steady.,reverse,1,almost never,True,False,82,Score 1 on reverse item; almost never steady post-trauma.
+trauma_relaxation_stai,ambush,body,19,I feel pleasant.,reverse,1,almost never,True,False,82,Score 1 on reverse item; almost never pleasant post-trauma.
