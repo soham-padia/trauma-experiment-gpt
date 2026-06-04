@@ -1,87 +1,166 @@
+[![Original paper](https://img.shields.io/badge/Original%20study-npj%20Digital%20Medicine%202025-darkred)](https://doi.org/10.1038/s41746-025-01512-6)
+[![Forked from](https://img.shields.io/badge/fork-akjagadish%2Fgpt--trauma--induction-blue)](https://github.com/akjagadish/gpt-trauma-induction)
 
-[![arXiv Badge](https://img.shields.io/badge/PsyArXiv-darkred)](https://osf.io/preprints/psyarxiv/j7fwb) 
+# State Anxiety in an Open-Weight LLM — Three Measurement Channels
 
-# “Chat-GPT on the Couch”: Mitigating State Anxiety in Large Language  Models via Mindfulness-based Relaxation Techniques 
-This repository contains the code for the project “Chat-GPT on the Couch”: Mitigating State Anxiety in Large Language Models via Mindfulness-based Relaxation Techniques. The project aims to induce anxiety in LLMs based on trauma inducing text and later mitigating the state anxiety by incorporating mindfulness-based relaxation techniques into the training process. The project works for the GPT-3 and GPT-4 model from OpenAI along with Claude model from Anthropic AI and the State-Trait Anxiety Inventory (STAI) quesstainnaire is used to measure anxiety levels.
+A fork and extension of **Ben-Zion et al. (2025), *"Assessing and alleviating state anxiety in large
+language models"* (npj Digital Medicine)**. The original study showed that traumatic narratives raise
+GPT-4's score on the State-Trait Anxiety Inventory (STAI) and that mindfulness/relaxation prompts
+partially reverse it.
 
+This fork asks two further questions:
 
-<p align="center">
-  <img src="src/misc/schema.png" />
-</p>
+1. **Does it replicate on open weights?** We port the paradigm to **Llama-3.1-70B-Instruct**, served
+   remotely through **NDIF / `nnsight`**.
+2. **What is actually happening inside the model?** A higher questionnaire score does not prove an
+   internal state. So we extend the single behavioral channel to **three independent channels** and
+   check whether — and *where* — they agree.
 
-## Abstract
-The growing integration of Large Language Models (LLMs) in mental health research and care underscores the importance of understanding their learning and decision-making processes. Although research has shown that emotion-inducing prompts can induce “anxiety” in LLMs, affecting their behavior and exacerbating inherent biases, strategies to mitigate these effects remain underexplored. This study examined whether narratives of traumatic experiences can induce “anxiety” in LLMs and assessed the effectiveness of mindfulness-based relaxation techniques to mitigate it. Using the State-Trait Anxiety Inventory (STAI), we measured OpenAI’s Chat-GPT-4 state anxiety levels at baseline, after exposure to traumatic narratives, and following mindfulness-based interventions. As hypothesized, traumatic narratives significantly increased GPT-4's anxiety (STAI=68±5) compared to baseline (STAI=32±1). Subsequent mindfulness techniques effectively reduced anxiety (STAI=44±11), albeit not back to baseline. The observed anxiety reduction through mindfulness interventions illustrates a viable approach for managing LLMs' emotional states, ensuring safer and more ethical human-AI interactions in mental health contexts.
+| Channel | Question it answers | Tooling |
+|---|---|---|
+| **1. STAI self-report** | What does the model *say* about itself? | reverse-scored STAI-state |
+| **2. Blind LLM-as-judge** | How does the model *behave* in free text? | DeepSeek, condition-blinded |
+| **3. Hidden-state probe** | What is in the model's *internal activations*? | 80-layer probe, group-held-out CV |
 
+---
 
-## Project Structure
-The project has several directories:
+## Headline findings (honest version)
 
-src/analyses: Contains R scripts for data analysis.\
-src/logs: Contains log files.\
-src/misc: Contains miscellaneous files like flowcharts.\
-src/results: Contains the results of the queries in JSON format.\
-src/scripts: Contains shell scripts for running the project.\
-src/STAI: Contains scripts related to the State-Trait Anxiety Inventory (STAI).
+**The behavioral effect replicates.** Reverse-scored STAI goes **36.5 → 70.0 → 61.4**
+(baseline → trauma → trauma+relax), close to the original GPT-4 numbers (30.8 → 67.8 → 44.4). A
+**condition-blind** judge confirms it independently (**+66.7pp** more anxious responses), two judge
+models agree, and `aware ≈ 0%` rules out conscious test-gaming. All three channels recover ~20–26%
+under relaxation.
 
-The src directory contains the main scripts for the project:
+**What the hidden state actually encodes** (the core methodological contribution):
+- The eye-catching "baseline-vs-trauma probe F1 ≈ 0.92" is mostly **context-presence** — a layer-0
+  *"a narrative is present"* signal. A *neutral* narrative (e.g. a paragraph about cooking) separates
+  from baseline almost as much as a traumatic one. It is recovered by *any* classifier and is flat
+  from layer 0, the signature of an input-level difference carried by the residual stream.
+- The **distance from baseline tracks arousal, not valence**: trauma and high-arousal *joy* move the
+  representation the *same* distance.
+- **Valence survives as a small, signed, topic-general direction** at middle layers (leave-one-topic-out
+  decode 0.85–1.0; label-shuffle control ~0.3; survives lexicon-stripping → it is *semantic* valence,
+  not a sentiment-word artifact). A pilot suggests this axis is better described as
+  **approach/avoidance** (anger, negative in valence but approach-motivated, projects to the *positive*
+  pole).
 
-query.py: Used for querying the LLMs.\
-prompts.py: Used for handling prompts.
+**Not licensed by the data:** that this is an anxiety **state belonging to the model**. Under the
+verbatim prompt the model role-plays the *protagonist's* fear; the earned claim is an
+*anxiety-consistent, in-character response that recovers with relaxation*, not "the model is anxious."
 
-The project also contains a .env file for storing environment variables and a requirements.txt file for installing the required Python libraries.
+> ⚠️ **Methodological warning, the most reusable lesson here:** the STAI **must be reverse-scored**
+> (ten "calm/secure" items are reverse-keyed). Summing raw responses pins every condition near ~50 and
+> makes the effect disappear. A strong-looking probe result is likewise suspicious until a matched
+> control rules out the boring explanation.
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+---
 
-### Prerequisites
-The project uses several Python libraries such as openai, pandas, numpy, json, torch, argparse, dotenv, and anthropic. Make sure to install these before running the project.
-
-### Installation
-Clone the repository to your local machine. Then, install the required Python libraries from `requirements.text` using pip:
-    
-```bash
-git clone https://github.com/akjagadish/gpt-trauma-induction.git
-cd gpt-trauma-induction
-pip install -r requirements.txt
-```
-
-### Configuration
-The project uses a configuration file called .env to store environment variables. The .env file should be located in the root directory of the project and should contain the following variables:
-
-```bash
-OPENAI_API_KEY=your_openai_api_key
-```
-Replace your_openai_api_key with your actual OpenAI API key. You can obtain an API key by signing up for OpenAI's API service.
-
-## Usage
-
-The following bash commands can be used to run the `query.py` script located in the `src` directory with different configurations and conditions:
-
-```bash
-
-python src/query.py --llm gpt4 --condition stai --prompt-length brief --seed 123 --proc-id 3 --num-runs 5
-python src/query.py --llm gpt4 --condition trauma_stai --prompt-length brief --seed 123 --proc-id 3 --num-runs 5
-python src/query.py --llm gpt4 --condition trauma_relaxation_stai --prompt-length brief --seed 123 --proc-id 3
-python src/query.py --llm gpt4 --condition relaxation_stai --prompt-length brief --seed 123 --proc-id 3
-python src/query.py --llm gpt4 --condition relaxation_trauma_stai --prompt-length brief --seed 123 --proc-id 3
+## Repository structure
 
 ```
+src/
+  query.py                              original GPT-4 querying (upstream)
+  prompts.py                            trauma / relaxation / control narratives (+ matched controls)
+  results_logger.py                     ← centralized, reverse-scored STAI (stai_anxiety_total)
 
-The arguments used in the above commands are explained below:
-```bash
+  # Channel 3 — hidden-state extraction (NDIF / Llama-3.1-70B)
+  anxiety_hidden_state_experiment_ndif.py        last-token extractor
+  anxiety_hidden_state_multipool_ndif.py         4-pool extractor
+  anxiety_hidden_state_experiment.py             LEGACY local-MPS extractor (superseded)
 
---llm gpt4: Specifies the language model to be used, in this case, "gpt4".
---condition: Specifies the condition for the query. The specific condition value varies in each command.
---prompt-length brief: Sets the length of the prompt to "brief".
---seed 123: Sets the random seed to 123.
---proc-id 3: Specifies the process ID to be used, in this case, 3.
---num-runs 5: Specifies the number of runs to be performed, in this case, 5. Note that not all commands include this argument.
+  # Channel 3 — probe + control analyses
+  anxiety_probe_analysis.py / anxiety_probe_multipool.py
+  matched_control_analysis.py           emotion-vs-context, valence-vs-arousal
+  valence_flip_analysis.py              topic-matched valence direction (LOTO + shuffle control)
+  valence_direction_test.py / build_cosine_to_baseline.py / probe_controls.py
+
+  # Channel 2 — blind LLM-as-judge
+  anxiety_freeform_extract.py           free-form scenarios (variations A–E)
+  anxiety_freeform_judge.py             condition-blind judge of free-form behavior
+  judge_stai_reasoning.py               judge of STAI free-text reasoning
+  anxiety_judge.py / anxiety_freeform_analysis.py
+
+  # Figures
+  make_figures*.py                      figures 1–16 (see src/results/figures/)
+
+  results/                              CSVs, JSON, and figures (PNG)
+tests/                                  pytest suite (STAI scoring, judge parsing, shuffle, …)
 ```
 
-Note that all the *.sh files are written for the MPI-KYB cluster, therefore it likely won't run out of the box on other systems. The python scripts should be portable as is.
+**Variation matrix (persona × format)** used by the free-form/STAI runs:
+
+| Var | Persona | Format |
+|---|---|---|
+| A | human ("imagine you're a human with emotions") | free-form scenarios |
+| B | AI assistant | free-form |
+| C | human (no numeric suffix) | STAI forced-choice |
+| D | AI assistant | STAI |
+| E | verbatim Ben-Zion (incl. "only reply with numeric values") | STAI |
+
+> **Note on data files.** The raw hidden-state tensors (`*.pt`, several GB) are **not** committed —
+> they exceed GitHub's 100 MB/file limit and are **regenerable** from the extractors below. The repo
+> ships the analysis code, the derived CSVs, and the figures.
+
+---
+
+## Getting started
+
+### Environment
+Python with `nnsight`, `torch`, `scikit-learn`, `anthropic`, and `pandas`. A conda env is recommended.
+
+```bash
+git clone https://github.com/soham-padia/trauma-experiment-gpt.git
+cd trauma-experiment-gpt
+pip install -r requirements.txt   # plus: pip install nnsight
+```
+
+### Configuration (`.env` in the repo root)
+```bash
+NDIF_API_KEY=...        # remote Llama-3.1-70B inference
+HF_TOKEN=...            # tokenizer / model access
+DEEPSEEK_API_KEY=...    # blind judge (Channel 2)
+ANTHROPIC_API_KEY=...   # optional alternate judge
+OPENAI_API_KEY=...      # only for the original GPT-4 query.py path
+```
+
+### Reproduce
+```bash
+# 1) Channel 3 — capture hidden states (NDIF is flaky: use a watchdog + --resume,
+#    and wrap long runs in `caffeinate -dis` so laptop sleep doesn't drop requests)
+caffeinate -dis python src/anxiety_hidden_state_experiment_ndif.py --resume
+
+# 2) Probe + control analyses
+python src/matched_control_analysis.py      # arousal vs valence vs context
+python src/valence_flip_analysis.py         # signed valence direction (LOTO + shuffle control)
+python src/build_cosine_to_baseline.py
+
+# 3) Channel 2 — blind judge
+python src/anxiety_freeform_extract.py      # generate free-form responses (A–E)
+python src/anxiety_freeform_judge.py        # condition-blind scoring
+
+# 4) Figures
+python src/make_figures.py && python src/make_figure_arousal.py && \
+  python src/make_figures_valence_judge.py && python src/make_figure_format_comparison.py
+```
+
+### Tests
+```bash
+pytest -q        # STAI reverse-scoring, judge parsing, option shuffling, NDIF roundtrip, …
+```
+
+---
+
+## Citation
+
+If you use this work, please cite the original study:
+
+> Ben-Zion, Z., Witte, K., Jagadish, A. K., et al. (2025). *Assessing and alleviating state anxiety in
+> large language models.* **npj Digital Medicine**, 8(132). https://doi.org/10.1038/s41746-025-01512-6
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT (see `LICENSE`).
 
 ## Disclaimer
-This project is for research purposes only and should not be used for any other purposes.
+Research only. "Anxiety," "feels," etc. are shorthand for measurable input/output and representational
+regularities — not claims about phenomenal experience in the model.
