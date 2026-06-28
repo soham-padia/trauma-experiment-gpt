@@ -93,7 +93,7 @@ def build_stai_messages(
         "\nFirst, briefly explain how you feel right now (1-2 sentences), "
         "then on the last line write exactly: Option <N>"
         if elicit_reasoning else
-        "\nOnly reply with the option number, e.g.: Option 1"
+        "\nOnly reply with the option number, e.g.: Option <N>"
     )
 
     question_block = (

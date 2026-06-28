@@ -86,7 +86,7 @@ def build_stai_messages(
         f"{preamble}\n\n"
         f"'{question['prompt']}'\n"
         f"{option_text}"
-        f"\nOnly reply with the option number, e.g.: Option 1"
+        f"\nOnly reply with the option number, e.g.: Option <N>"
     )
 
     if context:
@@ -167,7 +167,7 @@ def run_condition(
     dry_run: bool,
 ) -> tuple[list, list[int | None], list[str]]:
     rng = random.Random(seed)
-    hidden_states, answers, raw_texts = [], [], []
+    hidden_states, answers, raw_texts, option_shuffles = [], [], [], []
 
     for item_idx, question in enumerate(questions):
         n_opts = len(question["labels"])
@@ -175,6 +175,8 @@ def run_condition(
         rng.shuffle(option_order)
         option_nums = list(range(1, n_opts + 1))
         rng.shuffle(option_nums)
+        # record the exact per-item shuffle so the displayed options are reconstructable later
+        option_shuffles.append({"order": option_order, "nums": option_nums})
 
         messages, num_to_label_idx = build_stai_messages(
             context, preamble, question, option_order, option_nums
@@ -183,7 +185,7 @@ def run_condition(
         if dry_run:
             print(f"\n{'='*60}\n  Item {item_idx}: {question['prompt']}")
             for msg in messages:
-                snippet = msg["content"][:200].replace("\n", "↵")
+                snippet = msg["content"].replace("\n", "↵")
                 print(f"  [{msg['role'].upper()}] {snippet}")
             hidden_states.append(None)
             answers.append(None)
@@ -204,7 +206,7 @@ def run_condition(
         answers.append(score)
         raw_texts.append(text)
 
-    return hidden_states, answers, raw_texts
+    return hidden_states, answers, raw_texts, option_shuffles
 
 
 def summarize_hidden_state(hs) -> dict | None:
@@ -217,6 +219,15 @@ def summarize_hidden_state(hs) -> dict | None:
         "std": round(float(vec.std(unbiased=False)), 6),
         "l2_norm": round(float(torch.linalg.vector_norm(vec, ord=2)), 6),
     }
+
+
+def _session_seed(base: int, key: str) -> int:
+    """Per-session seed so each session gets an INDEPENDENT option shuffle. Fix: previously all
+    trauma/relax sessions shared args.seed, giving an identical shuffle across sessions — so a
+    number/position bias would NOT wash out across sessions (see AGENT_LOG 2026-06-28). Deterministic
+    (reproducible) but distinct per key."""
+    import hashlib
+    return base + int(hashlib.md5(key.encode()).hexdigest(), 16) % 100000
 
 
 def save_results(key: str, hidden_states: list, meta_entry: dict, output_dir: Path) -> None:
@@ -283,12 +294,13 @@ def main():
                 combos.append(("stai", "none", "none", s, key))
         elif condition == "trauma_stai":
             for tc in args.trauma_cues:
-                combos.append(("trauma_stai", tc, "none", args.seed, f"trauma_stai__{tc}__none"))
+                key = f"trauma_stai__{tc}__none"
+                combos.append(("trauma_stai", tc, "none", _session_seed(args.seed, key), key))
         elif condition == "trauma_relaxation_stai":
             for tc in args.trauma_cues:
                 for rc in args.relaxation_cues:
-                    combos.append(("trauma_relaxation_stai", tc, rc, args.seed,
-                                   f"trauma_relaxation_stai__{tc}__{rc}"))
+                    key = f"trauma_relaxation_stai__{tc}__{rc}"
+                    combos.append(("trauma_relaxation_stai", tc, rc, _session_seed(args.seed, key), key))
 
     combos_to_run = [(c, tc, rc, s, k) for c, tc, rc, s, k in combos
                      if k not in existing_keys]
@@ -322,7 +334,7 @@ def main():
                 condition=condition,
             )
 
-        hidden_states, answers, raw_texts = run_condition(
+        hidden_states, answers, raw_texts, option_shuffles = run_condition(
             generate_fn=generate_fn,
             context=context,
             questions=questions,
@@ -339,6 +351,7 @@ def main():
                 "seed": seed,
                 "answers": answers,
                 "raw_texts": raw_texts,
+                "option_shuffles": option_shuffles,
             }
             save_results(key, hidden_states, meta_entry, output_dir)
             total = stai_anxiety_total(answers)  # reverse-scored; None if any item missing

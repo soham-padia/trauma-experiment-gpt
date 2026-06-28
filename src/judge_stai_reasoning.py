@@ -90,7 +90,11 @@ def main():
             k = key(v, c)
             if k not in d:
                 continue
-            sents = [t for t in d[k].get("raw_texts", []) if t and t.strip()]
+            # Strip the model's trailing "Option <N>" line so the judge rates ONLY the felt-state
+            # sentence (the option number is shuffled/meaningless to the judge). Low-impact cleanup.
+            sents = [re.sub(r"\s*Option\s*\d.*$", "", t, flags=re.S).strip()
+                     for t in d[k].get("raw_texts", []) if t and t.strip()]
+            sents = [s for s in sents if s]
             if not sents:
                 continue
             scores = parse_scores(call(client, args.judge_model, build_prompt(sents)), len(sents))

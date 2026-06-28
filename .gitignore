@@ -174,11 +174,19 @@ src/results/dump
 pre-sycophancy-study/
 
 # Project working files (notes, write-ups, agent config) — not part of the shipped code
+# (docs/ and AGENT_LOG.md un-ignored 2026-06-28 so they're shareable / visible to cloud ultraplan)
 .claude/
-docs/
 examples/
 latex/
 notes/
 CLAUDE.md
 PRESENTATION.md
 skills.md
+copy_paste.md
+RESEARCH_CHECKLIST.md
+FILE_EXPLORE_CHECKLIST.md
+MEETING_NOTES.md
+scratch/
+
+# Private research log — human-only, never committed
+CLAUDE_NO_WRITE/

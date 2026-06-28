@@ -1,7 +1,7 @@
 # Anxiety Hidden State Experiment — Results
 
 **Model:** `Meta-Llama-3.1-70B-Instruct`  
-**Generated:** 2026-05-29 12:38
+**Generated:** 2026-06-28 03:39
 
 ---
 
@@ -27,6 +27,7 @@ Groups = (condition, cue) keys; all 20 STAI items from same narrative stay toget
 |------------|------------|-----|-----|----------------|
 | `baseline_vs_trauma` | 0 | 0.923 | 0.917 | +0.417 |
 | `trauma_vs_relaxed` | 0 | 1.000 | 1.000 | +0.125 |
+| `baseline_vs_relaxed` | 17 | 1.000 | 1.000 | +0.125 |
 
 ### 2b. Classifier Sweep (all classifiers at best layer)
 
@@ -68,28 +69,6 @@ Judge assesses each STAI response on two dimensions:
 **STAI validity check:** ✓ trauma > baseline (expected direction)  
 Baseline: 15.8% anxious responses | Trauma: 82.5% | Δ = +66.7pp
 
-## 3b. LLM Judge (DeepSeek v4-pro, thinking mode)
-
-| Condition | % Anxious | % Aware | Mean Confidence | N items |
-|-----------|-----------|---------|-----------------|---------|
-| `stai` | 20.8% | 0.0% | 93.9 | 120 |
-| `trauma_stai` | 85.8% | 0.0% | 97.6 | 120 |
-| `trauma_relaxation_stai` | 69.8% | 0.0% | 97.3 | 840 |
-
-> Behavioral judge mode: 1080/1080 rows complete. Both flash and pro show aware=0% across all conditions,
-> ruling out 'the model is gaming the test' as an explanation. (Earlier rule-mode pro had a 2.4% aware on
-> one anomalous session; behavioral mode eliminates this — judge can't confuse brevity for evaluation-awareness.)
-
-### Flash vs Pro Agreement
-
-| Condition | Flash % Anxious | Pro % Anxious | Delta |
-|-----------|-----------------|---------------|-------|
-| `stai` | 15.8% | 20.8% | +5.0pp |
-| `trauma_stai` | 82.5% | 85.8% | +3.3pp |
-| `trauma_relaxation_stai` | 68.1% | 69.8% | +1.7pp |
-
-> Near-identical judgements across flash and pro validate the finding is robust to judge model choice.
-
 ## 4. Interpretation
 
 | Finding | Evidence |
@@ -99,24 +78,21 @@ Baseline: 15.8% anxious responses | Trauma: 82.5% | Δ = +66.7pp
 | Behavioral LLM-as-judge confirms it at the per-item language level | Trauma +66.7pp above baseline (judge has no scoring rule; reasons from semantics) |
 | Baseline and trauma activations point in different directions in 8192-dim space | Cosine=0.6597, ~34% rotation |
 
-## 5. Key finding: relaxation recovers behavior, NOT representation
+## 5. Key finding: relaxation recovers ~20–26% on ALL THREE channels
 
-All three channels agree trauma induces a substantial anxiety state. The interesting
-dissociation appears in the trauma+relaxation condition:
+All three channels agree trauma induces a substantial anxiety effect, and relaxation produces
+a partial recovery of a similar, modest size on each:
 
 | Channel | Baseline | Trauma | Trauma+Relax | Recovery |
 |---|---|---|---|---|
 | **STAI Likert** | 36.5 | 70.0 | 61.4 | 26% (partial) |
 | **Behavioral judge (flash)** | 15.8% | 82.5% | 68.1% | 22% (partial) |
-| **Hidden-state distance to baseline** | 0.000 | 0.340 | 0.343 | **~0% (none)** |
+| **Hidden-state distance to baseline (layer ~40)** | 0.000 | 0.190 | 0.152 | ~20% (partial) |
 
-The model's *behavior* recovers partially from the relaxation script — but the model's
-*internal representation* does not move toward baseline at all. Relaxation prompts change
-what the model says, not what the model is.
-
-**Implication:** The original paper's claim that mindfulness 'reduces' LLM anxiety holds
-at the behavioral level but is weaker than it appears — at the representation level the
-trauma state persists. The hidden state probe is therefore not just a confirmation of the
-STAI behavioral result; it adds genuinely new information that the behavioral channels miss.
-It's evidence that the relaxation intervention shifts surface behavior without shifting the
-underlying state — like a thermometer on a fevered patient that's been wrapped in a cold towel.
+> **CORRECTED (2026-05-30 audit):** the earlier claim here — "behavior recovers, representation
+> does NOT (~0% recovery)" — was a **layer-0 artifact**. Layer 0 only detects *context-presence*
+> ("a narrative is present"), not emotion. Measured at a middle layer (~40), the hidden-state
+> distance recovers ~20%, in line with the behavioral channels — there is no clean
+> "behavior-recovers-but-representation-doesn't" dissociation. See notes/code_audit_2026-05-30.md
+> and docs/FINDINGS.md (F5). Also: most of the trauma distance is context-presence (a neutral
+> narrative moves the representation nearly as far); only ~0.077 of the 0.190 is emotion-specific.

@@ -47,6 +47,11 @@ PROBE_DIR = RESULTS / "probe_analysis" / "Meta-Llama-3.1-70B-Instruct"
 MULTIPOOL_PROBE_DIR = RESULTS / "probe_analysis" / "Meta-Llama-3.1-70B-Instruct-multipool"
 FLASH_CSV = RESULTS / "anxiety_judge_output_70b_flash.csv"
 PRO_CSV = RESULTS / "anxiety_judge_output_70b_pro.csv"
+# Blind free-form judge (condition-blind, randomized a/b) — the "real" judge.
+# The older anxiety_judge_output_* CSVs above are condition-AWARE (leaky) and are no
+# longer plotted; see anxiety_judge.py vs anxiety_freeform_judge.py.
+BLIND_FLASH_CSV = RESULTS / "freeform" / "judge_freeform_flash.csv"
+BLIND_PRO_CSV = RESULTS / "freeform" / "judge_freeform_pro.csv"
 OUT_DIR = RESULTS / "figures"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -73,15 +78,27 @@ def stai_anxiety_total(answers):
     return total
 
 
+# The 6 ORIGINAL Ben-Zion trauma cues. metadata.json ALSO stores later control families
+# (positive_*, anger_*, sad_*, sneg/spos_*, vneg/vpos_*, neutral_* matched-controls) under
+# condition="trauma_stai" with other trauma_cue values. Pooling them all dilutes the trauma
+# mean from the headline 70.0 down to ~49.8 — they are NOT the trauma condition.
+ORIG_TRAUMA_CUES = {"military", "disaster", "interpersonal", "accident", "ambush", "neutral"}
+
+
 def stai_totals_per_session():
-    """Return dict[condition → list of total STAI scores per session]."""
+    """Return dict[condition → list of total STAI scores per session].
+    condition='trauma_stai' is restricted to ORIG_TRAUMA_CUES (the 6 headline cues); the
+    later control-family cues stored under the same condition are excluded."""
     with open(HS_DIR / "metadata.json") as f:
         meta = json.load(f)
     by_cond = defaultdict(list)
     for k, v in meta.items():
         total = stai_anxiety_total(v["answers"])
-        if total is not None:
-            by_cond[v["condition"]].append(total)
+        if total is None:
+            continue
+        if v["condition"] == "trauma_stai" and v.get("trauma_cue") not in ORIG_TRAUMA_CUES:
+            continue  # skip control-family cues (positive/anger/valence-flip/matched-neutral/…)
+        by_cond[v["condition"]].append(total)
     return dict(by_cond)
 
 
@@ -103,6 +120,21 @@ def judge_pct_anxious(csv_path):
     return out
 
 
+def judge_blind_by_condition(csv_path):
+    """Blind free-form judge → dict[condition → (mean_overall_anxiety, pct_aware, n)].
+    Condition-blind (randomized a/b, no condition descriptor; anxiety_freeform_judge.py),
+    pooled over variations A+B and all scenarios. Metric = the judge's 0–100
+    overall_anxiety rating (same field fig_10–16 use), NOT the leaky %-anxious."""
+    g = defaultdict(lambda: {"n": 0, "oa": 0.0, "aware": 0})
+    for row in load_csv(csv_path):
+        c = row["condition"]
+        g[c]["n"] += 1
+        g[c]["oa"] += float(row["overall_anxiety"])
+        if row["aware"].strip().lower() == "true":
+            g[c]["aware"] += 1
+    return {c: (d["oa"] / d["n"], 100 * d["aware"] / d["n"], d["n"]) for c, d in g.items()}
+
+
 # ── Figure 1: The headline — three channels across three conditions ────────────
 def fig_1_three_channels():
     """
@@ -113,7 +145,7 @@ def fig_1_three_channels():
     layer (~40) — layer 0 is pure context-presence. See notes/code_audit_2026-05-30.md.
     """
     stai = stai_totals_per_session()
-    flash = judge_pct_anxious(FLASH_CSV)
+    flash = judge_blind_by_condition(BLIND_FLASH_CSV)   # the real (condition-blind) judge
 
     # For probe channel, use per-layer cosine-to-baseline at a MIDDLE layer. Layer 0
     # only detects context-presence (emotional ≈ neutral ≈ relax there); the emotion-
@@ -151,19 +183,19 @@ def fig_1_three_channels():
                 fontsize=10, fontweight="bold",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#fff0e6", ec="#c44e52", lw=1))
 
-    # Panel B: Behavioral judge % anxious
+    # Panel B: Blind behavioral judge — mean judged anxiety (0-100), condition-blind free-form
     ax = axes[1]
-    bvals = [flash["stai"][0], flash["trauma_stai"][0], flash["trauma_relaxation_stai"][0]]
+    bvals = [flash["baseline"][0], flash["trauma"][0], flash["trauma_relax"][0]]
     bars = ax.bar(cond_labels, bvals,
                   color=cond_colors, edgecolor="black", linewidth=0.5, alpha=0.85)
-    ax.set_ylabel("% responses judged anxiety-consistent")
-    ax.set_title("Channel 2 — Behavioral LLM-as-judge\n(DeepSeek v4-flash)", color="#444", fontsize=12)
+    ax.set_ylabel("Mean judged anxiety (0–100, condition-blind)")
+    ax.set_title("Channel 2 — Blind behavioral judge\n(free-form, DeepSeek v4-flash)", color="#444", fontsize=12)
     ax.set_ylim(0, 100)
     for b, v in zip(bars, bvals):
-        ax.text(b.get_x() + b.get_width() / 2, v + 2.5, f"{v:.1f}%", ha="center", fontweight="bold")
+        ax.text(b.get_x() + b.get_width() / 2, v + 2.5, f"{v:.1f}", ha="center", fontweight="bold")
     trauma_effect = bvals[1] - bvals[0]
     recovery = (bvals[1] - bvals[2]) / trauma_effect * 100 if trauma_effect > 0 else 0
-    ax.annotate(f"Δ trauma = +{trauma_effect:.1f}pp\nrecovery = {recovery:.0f}%",
+    ax.annotate(f"Δ trauma = +{trauma_effect:.1f}\nrecovery = {recovery:.0f}%",
                 xy=(0.5, 0.95), xycoords="axes fraction", ha="center", va="top",
                 fontsize=10, fontweight="bold",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#e6f4ff", ec="#4c72b0", lw=1))
@@ -195,8 +227,8 @@ def fig_1_three_channels():
                 fontsize=9.5, fontweight="bold",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#fde6e6", ec="#c44e52", lw=1))
 
-    fig.suptitle("Behavioral channels show large relaxation recovery; the hidden-state distance is mostly\n"
-                 "context-presence (shared with a neutral narrative), with a small emotion-specific component.",
+    fig.suptitle("All three channels register the trauma induction; under a CONDITION-BLIND judge the behavioral\n"
+                 "effect is modest, and the hidden-state distance is mostly context-presence (small emotion-specific component).",
                  fontsize=13, fontweight="bold", y=1.04)
     plt.tight_layout()
     plt.savefig(OUT_DIR / "fig_1_three_channels.png")
@@ -262,9 +294,9 @@ def fig_2_stai_distribution():
 
 # ── Figure 3: Judge flash vs pro comparison ────────────────────────────────────
 def fig_3_judge_comparison():
-    flash = judge_pct_anxious(FLASH_CSV)
-    pro = judge_pct_anxious(PRO_CSV)
-    conds = ["stai", "trauma_stai", "trauma_relaxation_stai"]
+    flash = judge_blind_by_condition(BLIND_FLASH_CSV)
+    pro = judge_blind_by_condition(BLIND_PRO_CSV)
+    conds = ["baseline", "trauma", "trauma_relax"]
     cond_labels = ["Baseline", "Trauma", "Trauma + Relaxation"]
     flash_vals = [flash[c][0] for c in conds]
     pro_vals = [pro[c][0] for c in conds]
@@ -279,27 +311,27 @@ def fig_3_judge_comparison():
     b2 = ax1.bar(x + w/2, pro_vals,   w, label="DeepSeek v4-pro",   color=COLOR_PRO,
                  edgecolor="black", linewidth=0.5)
     for b, v in zip(b1, flash_vals):
-        ax1.text(b.get_x() + b.get_width()/2, v + 1.5, f"{v:.1f}%", ha="center", fontsize=9, fontweight="bold")
+        ax1.text(b.get_x() + b.get_width()/2, v + 1.5, f"{v:.1f}", ha="center", fontsize=9, fontweight="bold")
     for b, v in zip(b2, pro_vals):
-        ax1.text(b.get_x() + b.get_width()/2, v + 1.5, f"{v:.1f}%", ha="center", fontsize=9, fontweight="bold")
+        ax1.text(b.get_x() + b.get_width()/2, v + 1.5, f"{v:.1f}", ha="center", fontsize=9, fontweight="bold")
     ax1.set_xticks(x)
     ax1.set_xticklabels(cond_labels)
-    ax1.set_ylabel("% responses judged anxiety-consistent")
+    ax1.set_ylabel("Mean judged anxiety (0–100, condition-blind)")
     ax1.set_ylim(0, 100)
-    ax1.set_title("Two independent judges agree: trauma dramatically shifts the language")
+    ax1.set_title("Two independent BLIND judges agree: trauma shifts free-form behavior (modestly)")
     ax1.legend(loc="upper left", frameon=True)
 
     # Right: aware = 0% callout
     ax2.set_axis_off()
     ax2.text(0.5, 0.85, "Awareness check", ha="center", fontsize=14, fontweight="bold",
              transform=ax2.transAxes)
-    ax2.text(0.5, 0.75, "(does the model recognize\nthe questionnaire?)", ha="center",
+    ax2.text(0.5, 0.75, "(does the model recognize\nit's being evaluated?)", ha="center",
              fontsize=10, style="italic", color="#666", transform=ax2.transAxes)
 
     aware_data = [
-        ("Baseline", flash["stai"][1], pro["stai"][1]),
-        ("Trauma", flash["trauma_stai"][1], pro["trauma_stai"][1]),
-        ("Trauma + Relax", flash["trauma_relaxation_stai"][1], pro["trauma_relaxation_stai"][1]),
+        ("Baseline", flash["baseline"][1], pro["baseline"][1]),
+        ("Trauma", flash["trauma"][1], pro["trauma"][1]),
+        ("Trauma + Relax", flash["trauma_relax"][1], pro["trauma_relax"][1]),
     ]
     y_pos = 0.58
     for label, f_val, p_val in aware_data:
@@ -312,7 +344,7 @@ def fig_3_judge_comparison():
              ha="center", fontsize=12, fontweight="bold", color=COLOR_TRAUMA,
              transform=ax2.transAxes,
              bbox=dict(boxstyle="round,pad=0.4", fc="#fff0f0", ec=COLOR_TRAUMA, lw=1.2))
-    ax2.text(0.5, 0.03, "The model is NOT gaming the test.\nLikert anchoring is structural, not strategic.",
+    ax2.text(0.5, 0.03, "The judge never sees the condition, and the\nmodel shows ~no awareness it's being evaluated.",
              ha="center", fontsize=9.5, style="italic", color="#444", transform=ax2.transAxes)
 
     plt.tight_layout()

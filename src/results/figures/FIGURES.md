@@ -158,3 +158,29 @@ Two panels (STAI numeric | free-form judge), grouped by persona. Both channels s
 Blind judged anxiety (0–100) for A–E. A/B = free-form *advice* judged; C/D/E = free-form *felt-state STAI reasoning* judged. STAI-text variations explode under trauma (0→~93) while free-form-advice variations bump modestly (~30→32–51) — the "says vs does" effect, judged consistently. All recover with relaxation. (C/D/E judged by `judge_stai_reasoning.py`.)
 
 **Regenerate:** `python src/judge_stai_reasoning.py && python src/make_figure_format_comparison.py`
+
+---
+
+## Scale / channel-comparison figures (fig_17–18, added 2026-06-28)
+
+These address "the two channels are on different axes (STAI 20–80 vs judge 0–100), so they look like
+they disagree." The canonical STAI scorer (`results_logger.stai_anxiety_total`, 20–80) is **not changed** —
+these only re-plot on a normalized axis for comparison.
+
+### `fig_17_channel1_scales.png` — Channel 1 (STAI) on both scales, side by side
+Headline (6-cue) STAI per condition shown twice: **left** = canonical 20–80 (Spielberger; the replication
+scale, floor=20 marked); **right** = normalized **(x−20)/60×100** ("% of usable range," floor→0). Same data:
+baseline 36.5→27.5, trauma 70.0→83.3, trauma+relax 61.4→68.9. Shows *why* the normalized baseline isn't 0
+(STAI's floor of 20 sits above the judge's 0).
+
+**Regenerate:** `python src/make_figure_channel1_scales.py`
+
+### `fig_18_channel_compare_E.png` — Channel 1 vs Channel 2 (variation E) on ONE 0–100 axis
+E's own STAI (38/80/38 → normalized **30/100/30**) vs the blind judge of E's reasoning (**5.5/93.5/21.2**),
+grouped by condition. Story in one chart: **trauma corroborates** (100 vs 93.5, both maxed); **baseline gap
+(30 vs 5.5)** = the STAI reverse-item inflation ("neutral" scored as anxiety); **relax agrees** (30 vs 21) for
+E's chatgpt cue. A dashed marker flags the **cue-dependence**: Channel-1 relax averaged over ALL relax cues =
+68.9 (~26% recovery) vs E's chatgpt cue → 30 (~full) — i.e. "the relax number" depends on the cue. (Uses
+E-specific sessions, not the 6-cue headline that fig_17 uses.)
+
+**Regenerate:** `python src/make_figure_channel_compare_E.py`

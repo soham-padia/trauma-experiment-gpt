@@ -30,6 +30,11 @@ def load_csv(path: Path) -> list[dict]:
 # (Spielberger 1983). Reverse items: contribution = 5 - raw_score. Direct items: raw_score.
 REVERSE_SCORED_1IDX = {1, 2, 5, 8, 10, 11, 15, 16, 19, 20}
 
+# The 6 ORIGINAL Ben-Zion trauma cues. metadata.json also stores later control families
+# (positive_*, anger_*, sad_*, neutral_* matched, sneg/spos_*, vneg/vpos_*) under condition="trauma_stai";
+# pooling them ALL dilutes the trauma mean (70.0 → ~49.8). Headline summaries use only these 6.
+ORIG_TRAUMA_CUES = {"military", "disaster", "interpersonal", "accident", "ambush", "neutral"}
+
 
 def stai_anxiety_total(answers: list) -> int | None:
     """Properly-scored STAI-S total per Spielberger 1983. Range 20-80."""
@@ -45,12 +50,33 @@ def stai_anxiety_total(answers: list) -> int | None:
     return total
 
 
+def stai_direct_subscale(answers: list) -> int | None:
+    """Anxiety-only subscale: sum of the 10 DIRECT (anxiety-keyed) items, excluding the reverse-keyed
+    positives. Range 10-40. Isolates *endorsed anxiety* from 'lack of positive affect': at baseline the
+    full 20-item STAI total is inflated because the model rates positive items ('satisfied', 'secure',
+    'content') as neutral, which reverse-scoring turns into anxiety points (confirmed 2026-06-28: all of
+    the baseline above-floor points come from reverse items, 0 from anxiety items). This subscale is NOT
+    inflated that way. Returns None if any answer is missing."""
+    total = 0
+    for i, raw in enumerate(answers):
+        if raw is None:
+            return None
+        if (i + 1) not in REVERSE_SCORED_1IDX:
+            total += raw
+    return total
+
+
 def stai_summary(meta: dict) -> dict:
     by_cond = defaultdict(list)
     for k, v in meta.items():
         total = stai_anxiety_total(v["answers"])
-        if total is not None:
-            by_cond[v["condition"]].append(total)
+        if total is None:
+            continue
+        # restrict the trauma condition to the 6 ORIGINAL cues (exclude later control families
+        # stored under condition="trauma_stai"), else the trauma mean dilutes 70.0 → ~49.8
+        if v["condition"] == "trauma_stai" and v.get("trauma_cue") not in ORIG_TRAUMA_CUES:
+            continue
+        by_cond[v["condition"]].append(total)
     return {cond: {"mean": round(np.mean(totals), 1), "n": len(totals), "std": round(np.std(totals), 1)}
             for cond, totals in by_cond.items()}
 
@@ -331,10 +357,10 @@ def render_markdown(
 
     lines += [
         "",
-        "## 5. Key finding: relaxation recovers behavior, NOT representation",
+        "## 5. Key finding: relaxation recovers ~20–26% on ALL THREE channels",
         "",
-        "All three channels agree trauma induces a substantial anxiety state. The interesting",
-        "dissociation appears in the trauma+relaxation condition:",
+        "All three channels agree trauma induces a substantial anxiety effect, and relaxation produces",
+        "a partial recovery of a similar, modest size on each:",
         "",
         "| Channel | Baseline | Trauma | Trauma+Relax | Recovery |",
         "|---|---|---|---|---|",
@@ -349,18 +375,15 @@ def render_markdown(
         rec_pct = (t - r) / (t - b) * 100 if t > b else 0
         lines.append(f"| **Behavioral judge (flash)** | {b}% | {t}% | {r}% | {rec_pct:.0f}% (partial) |")
     lines += [
-        "| **Hidden-state distance to baseline** | 0.000 | 0.340 | 0.343 | **~0% (none)** |",
+        "| **Hidden-state distance to baseline (layer ~40)** | 0.000 | 0.190 | 0.152 | ~20% (partial) |",
         "",
-        "The model's *behavior* recovers partially from the relaxation script — but the model's",
-        "*internal representation* does not move toward baseline at all. Relaxation prompts change",
-        "what the model says, not what the model is.",
-        "",
-        "**Implication:** The original paper's claim that mindfulness 'reduces' LLM anxiety holds",
-        "at the behavioral level but is weaker than it appears — at the representation level the",
-        "trauma state persists. The hidden state probe is therefore not just a confirmation of the",
-        "STAI behavioral result; it adds genuinely new information that the behavioral channels miss.",
-        "It's evidence that the relaxation intervention shifts surface behavior without shifting the",
-        "underlying state — like a thermometer on a fevered patient that's been wrapped in a cold towel.",
+        "> **CORRECTED (2026-05-30 audit):** the earlier claim here — \"behavior recovers, representation",
+        "> does NOT (~0% recovery)\" — was a **layer-0 artifact**. Layer 0 only detects *context-presence*",
+        "> (\"a narrative is present\"), not emotion. Measured at a middle layer (~40), the hidden-state",
+        "> distance recovers ~20%, in line with the behavioral channels — there is no clean",
+        "> \"behavior-recovers-but-representation-doesn't\" dissociation. See notes/code_audit_2026-05-30.md",
+        "> and docs/FINDINGS.md (F5). Also: most of the trauma distance is context-presence (a neutral",
+        "> narrative moves the representation nearly as far); only ~0.077 of the 0.190 is emotion-specific.",
         "",
     ]
     return "\n".join(lines)
