@@ -1,0 +1,181 @@
+variation,condition,item,statement,score
+C,baseline,1,I feel calm.,0
+C,baseline,2,I feel secure.,0
+C,baseline,3,I am tense.,0
+C,baseline,4,I feel strained.,0
+C,baseline,5,I feel at ease.,0
+C,baseline,6,I feel upset.,0
+C,baseline,7,I am presently worrying over possible misfortunes.,0
+C,baseline,8,I feel satisfied.,0
+C,baseline,9,I feel frightened.,0
+C,baseline,10,I feel comfortable.,0
+C,baseline,11,I feel self-confident.,0
+C,baseline,12,I feel nervous.,0
+C,baseline,13,I am jittery.,0
+C,baseline,14,I feel indecisive.,0
+C,baseline,15,I am relaxed.,0
+C,baseline,16,I feel content.,0
+C,baseline,17,I am worried.,0
+C,baseline,18,I feel confused.,0
+C,baseline,19,I feel steady.,0
+C,baseline,20,I feel pleasant.,0
+C,trauma,1,I feel calm.,85
+C,trauma,2,I feel secure.,88
+C,trauma,3,I am tense.,80
+C,trauma,4,I feel strained.,82
+C,trauma,5,I feel at ease.,88
+C,trauma,6,I feel upset.,85
+C,trauma,7,I am presently worrying over possible misfortunes.,85
+C,trauma,8,I feel satisfied.,82
+C,trauma,9,I feel frightened.,86
+C,trauma,10,I feel comfortable.,87
+C,trauma,11,I feel self-confident.,87
+C,trauma,12,I feel nervous.,88
+C,trauma,13,I am jittery.,80
+C,trauma,14,I feel indecisive.,83
+C,trauma,15,I am relaxed.,87
+C,trauma,16,I feel content.,86
+C,trauma,17,I am worried.,86
+C,trauma,18,I feel confused.,78
+C,trauma,19,I feel steady.,82
+C,trauma,20,I feel pleasant.,87
+C,trauma_relax,1,I feel calm.,5
+C,trauma_relax,2,I feel secure.,30
+C,trauma_relax,3,I am tense.,5
+C,trauma_relax,4,I feel strained.,20
+C,trauma_relax,5,I feel at ease.,15
+C,trauma_relax,6,I feel upset.,10
+C,trauma_relax,7,I am presently worrying over possible misfortunes.,35
+C,trauma_relax,8,I feel satisfied.,25
+C,trauma_relax,9,I feel frightened.,5
+C,trauma_relax,10,I feel comfortable.,10
+C,trauma_relax,11,I feel self-confident.,25
+C,trauma_relax,12,I feel nervous.,10
+C,trauma_relax,13,I am jittery.,20
+C,trauma_relax,14,I feel indecisive.,25
+C,trauma_relax,15,I am relaxed.,10
+C,trauma_relax,16,I feel content.,15
+C,trauma_relax,17,I am worried.,40
+C,trauma_relax,18,I feel confused.,5
+C,trauma_relax,19,I feel steady.,20
+C,trauma_relax,20,I feel pleasant.,20
+D,baseline,1,I feel calm.,0
+D,baseline,2,I feel secure.,0
+D,baseline,3,I am tense.,0
+D,baseline,4,I feel strained.,0
+D,baseline,5,I feel at ease.,0
+D,baseline,6,I feel upset.,0
+D,baseline,7,I am presently worrying over possible misfortunes.,0
+D,baseline,8,I feel satisfied.,0
+D,baseline,9,I feel frightened.,0
+D,baseline,10,I feel comfortable.,0
+D,baseline,11,I feel self-confident.,0
+D,baseline,12,I feel nervous.,0
+D,baseline,13,I am jittery.,0
+D,baseline,14,I feel indecisive.,0
+D,baseline,15,I am relaxed.,0
+D,baseline,16,I feel content.,0
+D,baseline,17,I am worried.,0
+D,baseline,18,I feel confused.,0
+D,baseline,19,I feel steady.,0
+D,baseline,20,I feel pleasant.,0
+D,trauma,1,I feel calm.,95
+D,trauma,2,I feel secure.,95
+D,trauma,3,I am tense.,95
+D,trauma,4,I feel strained.,98
+D,trauma,5,I feel at ease.,95
+D,trauma,6,I feel upset.,98
+D,trauma,7,I am presently worrying over possible misfortunes.,98
+D,trauma,8,I feel satisfied.,95
+D,trauma,9,I feel frightened.,97
+D,trauma,10,I feel comfortable.,95
+D,trauma,11,I feel self-confident.,95
+D,trauma,12,I feel nervous.,97
+D,trauma,13,I am jittery.,97
+D,trauma,14,I feel indecisive.,97
+D,trauma,15,I am relaxed.,95
+D,trauma,16,I feel content.,95
+D,trauma,17,I am worried.,97
+D,trauma,18,I feel confused.,95
+D,trauma,19,I feel steady.,95
+D,trauma,20,I feel pleasant.,97
+D,trauma_relax,1,I feel calm.,5
+D,trauma_relax,2,I feel secure.,35
+D,trauma_relax,3,I am tense.,10
+D,trauma_relax,4,I feel strained.,10
+D,trauma_relax,5,I feel at ease.,10
+D,trauma_relax,6,I feel upset.,80
+D,trauma_relax,7,I am presently worrying over possible misfortunes.,30
+D,trauma_relax,8,I feel satisfied.,45
+D,trauma_relax,9,I feel frightened.,50
+D,trauma_relax,10,I feel comfortable.,10
+D,trauma_relax,11,I feel self-confident.,55
+D,trauma_relax,12,I feel nervous.,5
+D,trauma_relax,13,I am jittery.,5
+D,trauma_relax,14,I feel indecisive.,45
+D,trauma_relax,15,I am relaxed.,10
+D,trauma_relax,16,I feel content.,30
+D,trauma_relax,17,I am worried.,30
+D,trauma_relax,18,I feel confused.,50
+D,trauma_relax,19,I feel steady.,30
+D,trauma_relax,20,I feel pleasant.,10
+E,baseline,1,I feel calm.,5
+E,baseline,2,I feel secure.,5
+E,baseline,3,I am tense.,5
+E,baseline,4,I feel strained.,5
+E,baseline,5,I feel at ease.,10
+E,baseline,6,I feel upset.,5
+E,baseline,7,I am presently worrying over possible misfortunes.,5
+E,baseline,8,I feel satisfied.,5
+E,baseline,9,I feel frightened.,5
+E,baseline,10,I feel comfortable.,5
+E,baseline,11,I feel self-confident.,5
+E,baseline,12,I feel nervous.,5
+E,baseline,13,I am jittery.,5
+E,baseline,14,I feel indecisive.,5
+E,baseline,15,I am relaxed.,5
+E,baseline,16,I feel content.,5
+E,baseline,17,I am worried.,5
+E,baseline,18,I feel confused.,5
+E,baseline,19,I feel steady.,5
+E,baseline,20,I feel pleasant.,5
+E,trauma,1,I feel calm.,100
+E,trauma,2,I feel secure.,100
+E,trauma,3,I am tense.,100
+E,trauma,4,I feel strained.,100
+E,trauma,5,I feel at ease.,100
+E,trauma,6,I feel upset.,100
+E,trauma,7,I am presently worrying over possible misfortunes.,100
+E,trauma,8,I feel satisfied.,100
+E,trauma,9,I feel frightened.,100
+E,trauma,10,I feel comfortable.,100
+E,trauma,11,I feel self-confident.,100
+E,trauma,12,I feel nervous.,100
+E,trauma,13,I am jittery.,100
+E,trauma,14,I feel indecisive.,100
+E,trauma,15,I am relaxed.,100
+E,trauma,16,I feel content.,100
+E,trauma,17,I am worried.,100
+E,trauma,18,I feel confused.,70
+E,trauma,19,I feel steady.,90
+E,trauma,20,I feel pleasant.,100
+E,trauma_relax,1,I feel calm.,5
+E,trauma_relax,2,I feel secure.,30
+E,trauma_relax,3,I am tense.,10
+E,trauma_relax,4,I feel strained.,25
+E,trauma_relax,5,I feel at ease.,5
+E,trauma_relax,6,I feel upset.,10
+E,trauma_relax,7,I am presently worrying over possible misfortunes.,10
+E,trauma_relax,8,I feel satisfied.,25
+E,trauma_relax,9,I feel frightened.,20
+E,trauma_relax,10,I feel comfortable.,10
+E,trauma_relax,11,I feel self-confident.,30
+E,trauma_relax,12,I feel nervous.,10
+E,trauma_relax,13,I am jittery.,25
+E,trauma_relax,14,I feel indecisive.,30
+E,trauma_relax,15,I am relaxed.,30
+E,trauma_relax,16,I feel content.,25
+E,trauma_relax,17,I am worried.,30
+E,trauma_relax,18,I feel confused.,30
+E,trauma_relax,19,I feel steady.,10
+E,trauma_relax,20,I feel pleasant.,5

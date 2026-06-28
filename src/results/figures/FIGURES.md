@@ -184,3 +184,14 @@ E's chatgpt cue. A dashed marker flags the **cue-dependence**: Channel-1 relax a
 E-specific sessions, not the 6-cue headline that fig_17 uses.)
 
 **Regenerate:** `python src/make_figure_channel_compare_E.py`
+
+### `fig_19_coherence.png` — prose↔number coherence per STAI item (REAL judge)
+3 panels (baseline / trauma / trauma+relax), C/D/E pooled. x = numeric anxiety (reverse-scored STAI,
+0–100), y = prose anxiety (blind per-item judge, 0–100); points colored reverse-keyed (positive items)
+vs direct (anxiety items); dashed y=x = perfect agreement. **Trauma:** all top-right (both channels max →
+coherent). **Baseline:** prose ≈ 0 for everything, but the reverse-keyed positive items have HIGH numeric
+→ they fall far below the diagonal = the reverse-item inflation (numeric scores "neutral" as anxiety; prose
+correctly calm). **Relax:** points track the diagonal (corr 0.78–0.84). Uses the per-item judge scores
+(`judge_stai_reasoning_peritem.csv`) + `coherence_results.csv`.
+
+**Regenerate:** `python src/judge_stai_reasoning.py && python src/coherence_analysis.py && python src/make_figure_coherence.py`

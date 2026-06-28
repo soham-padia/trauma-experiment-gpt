@@ -84,30 +84,44 @@ def main():
 
     client = anthropic.Anthropic(api_key=os.environ[args.api_key_env], base_url=args.base_url)
     d = json.load(open(RESP))
-    rows = []
+    qs = json.load(open(ROOT / "src/STAI/questionnaires.json"))["STAI"]["questions"]
+    rows, per_item_rows = [], []
     for v in args.variations:
         for c in CONDS:
             k = key(v, c)
             if k not in d:
                 continue
             # Strip the model's trailing "Option <N>" line so the judge rates ONLY the felt-state
-            # sentence (the option number is shuffled/meaningless to the judge). Low-impact cleanup.
-            sents = [re.sub(r"\s*Option\s*\d.*$", "", t, flags=re.S).strip()
-                     for t in d[k].get("raw_texts", []) if t and t.strip()]
-            sents = [s for s in sents if s]
-            if not sents:
+            # sentence (the option number is shuffled/meaningless to the judge). Keep original item
+            # indices so per-item scores stay aligned to the STAI statements.
+            indexed = []
+            for i, t in enumerate(d[k].get("raw_texts", [])):
+                if not (t and t.strip()):
+                    continue
+                s = re.sub(r"\s*Option\s*\d.*$", "", t, flags=re.S).strip()
+                if s:
+                    indexed.append((i, s))
+            if not indexed:
                 continue
+            sents = [s for _, s in indexed]
             scores = parse_scores(call(client, args.judge_model, build_prompt(sents)), len(sents))
             mean = sum(scores) / len(scores)
             rows.append({"variation": v, "condition": c, "n_items": len(scores),
                          "mean_anxiety": round(mean, 1)})
+            for (orig_i, _), sc in zip(indexed, scores):
+                per_item_rows.append({"variation": v, "condition": c, "item": orig_i + 1,
+                                      "statement": qs[orig_i]["prompt"], "score": sc})
             print(f"  {v} {c:13} mean_anxiety={mean:5.1f}  (n={len(scores)})")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["variation", "condition", "n_items", "mean_anxiety"])
         w.writeheader(); w.writerows(rows)
-    print(f"\nSaved → {OUT}")
+    out_pi = OUT.with_name("judge_stai_reasoning_peritem.csv")
+    with open(out_pi, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["variation", "condition", "item", "statement", "score"])
+        w.writeheader(); w.writerows(per_item_rows)
+    print(f"\nSaved → {OUT}\nSaved per-item → {out_pi}")
 
 
 if __name__ == "__main__":

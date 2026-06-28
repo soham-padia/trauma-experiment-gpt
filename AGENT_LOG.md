@@ -1,5 +1,29 @@
 # Agent Log
 
+## ✅ BULLETPROOFING — Tier 1 DONE (2026-06-28, DeepSeek; autonomous)
+
+**#7 judge re-run (refreshed + per-item).** Re-ran `judge_stai_reasoning.py` with the option-tail strip
+and **per-item storage** (`judge_stai_reasoning_peritem.csv`). Refreshed means (flash): C 0/84.6/17.5,
+D 0/96.0/27.8, E 5.2/98.0/18.8 — close to the pre-refresh 0/91.5/31.8 etc. (the tail was inert; deltas ≤~14
+are within DeepSeek run-to-run variance). Story unchanged: trauma saturates, baseline ~0, partial recovery.
+⚠ docs/figures (fig_16, SUMMARY) still cite the PRE-refresh C/D/E means — update on next figure regen.
+
+**#8 REAL prose↔number coherence** (`coherence_analysis.py` → `coherence_results.csv`; no new API — joins
+the per-item judge scores with the reverse-scored numeric). Per-item, both on 0–100:
+| cond | mean|gap| | #gap≥40 | of which reverse-keyed |
+|---|---|---|---|
+| trauma (C/D/E) | 2–16 | **0** | — | ✅ coherent (both saturated) |
+| trauma_relax | 16–19 | 1–4 | most | corr 0.78–0.84 (track together in recovery) |
+| **baseline** | 18–30 | 4–8 | **100% (6/6, 4/4, 8/8)** | ❌ incoherent **only on reverse items** |
+
+**Result:** confirms — with the REAL judge — what the lexical proxy could only hint at: at baseline the
+prose↔number disagreement is **entirely on the positive reverse-keyed items** (numeric says anxious from the
+inflation; prose reads calm). Trauma is fully coherent. This is the airtight version of the 2026-06-28
+coherence proposal; the lexical-proxy "baseline mismatch" was real in direction but its magnitude was a
+proxy artifact (negation) — the real judge localizes it cleanly to the reverse items.
+
+---
+
 ## ✅ BULLETPROOFING — Tier 0 DONE (2026-06-28, commit 67a6e14, pushed)
 No new model calls; all on existing data / code / docs. 282 tests pass.
 - **Dilution fixed** in `results_logger.stai_summary` (+ earlier `make_figures`): trauma restricted to the
