@@ -1,5 +1,26 @@
 # Agent Log
 
+## ✅ BULLETPROOFING — Tier 0 DONE (2026-06-28, commit 67a6e14, pushed)
+No new model calls; all on existing data / code / docs. 282 tests pass.
+- **Dilution fixed** in `results_logger.stai_summary` (+ earlier `make_figures`): trauma restricted to the
+  6 original cues → 70.0 (was 49.8). `RESULTS.md` regenerated; debunked "~0% recovery" claim removed (→~20%).
+- **Anxiety-only subscale** (`stai_direct_subscale`, 10 direct items): baseline **16.0** vs floor 10 (≈ floor),
+  trauma 33.5, relax 30.8 → CONFIRMS the reverse-item inflation: on the anxiety items the model is near-floor
+  calm at baseline; the full-STAI baseline 36.5 is inflated by the positive reverse-items.
+- **Shuffle hardened (future runs):** de-anchored the answer cue ("Option 1"→"Option <N>"); now STORE the
+  per-item `option_shuffles` in metadata; **per-session seed** so the shuffle is independent across sessions
+  (fixes the seed-reuse → identical-shuffle issue that made the number-bias not wash out).
+- **judge_stai_reasoning** strips the trailing "Option N" (forward-looking; CSVs need a re-run to refresh).
+- **Docs:** variation E relabelled (not a faithful verbatim replication); F8 wording softened.
+- **Figures:** fig_1/fig_3 Channel-2 re-cut from the BLIND judge; fig_17/fig_18 (channel-scale comparison) added.
+- Tier-0 #6 caveat: the true position(slot)×content primacy test needs the now-stored shuffle + varied
+  seeds → only doable on FUTURE runs.
+
+**NEXT (paused for budget): Tier 1 (DeepSeek $) = re-run C/D/E judge storing per-item scores + the real
+coherence judge. Tier 2 (NDIF+DeepSeek $$) = disaster-cue behavioral replication (kills military-only), etc.**
+
+---
+
 ## ⏳ PENDING RUNS / ANALYSES — not yet done (master list, updated 2026-06-26)
 
 ### A. State-dynamics runs (broad-#4 path-independence) — need NEW NDIF extraction
